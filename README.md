@@ -74,3 +74,6 @@ val mustafar = Place {
 - The address Property can be a value from the `Address` set
 - Text implements the `Address` interface, and is part of the set
 - [PostalAddress](https://schema.org/PostalAddress) values are also part of the `Address` Property set
+
+### Versioning
+This project follows Semantic Versioning, with a metadata component which indicates the schema.org version.
