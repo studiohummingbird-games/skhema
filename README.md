@@ -77,3 +77,9 @@ val mustafar = Place {
 
 ### Versioning
 This project follows Semantic Versioning, with a metadata component which indicates the schema.org version.
+
+## Why?
+I want to standardize the fuck out of as much as possible. There is so much untapped potential in what already exists.
+I want to push the boundaries of what is possible with what we already have.
+I want people to have an intuitive understanding about the relationships between objects across as many domains as
+possible, and be able to utilize those expectations to solve harder problems more quickly.
