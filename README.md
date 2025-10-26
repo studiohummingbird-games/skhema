@@ -53,7 +53,7 @@ Properties are also `interface`s, and typically don't have any parent type.
 interface Address
 ```
 
-Properties can be added to Type simply by include them.
+Properties can be added to Types simply by including them.
 ```kotlin
 interface Place {
     val address: Address?
