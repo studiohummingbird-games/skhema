@@ -16,13 +16,7 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.properties.IssuedBy
-import games.studiohummingbird.skhema.properties.IssuedThrough
-import games.studiohummingbird.skhema.properties.PermitAudience
-import games.studiohummingbird.skhema.properties.ValidFor
-import games.studiohummingbird.skhema.properties.ValidFrom
-import games.studiohummingbird.skhema.properties.ValidIn
-import games.studiohummingbird.skhema.properties.ValidUntil
+import games.studiohummingbird.skhema.properties.*
 
 interface Permit
     : Intangible {

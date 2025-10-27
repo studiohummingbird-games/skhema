@@ -16,19 +16,24 @@
  */
 package games.studiohummingbird.skhema.types
 
+import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.mutable.MutableIntangible
-import games.studiohummingbird.skhema.properties.Description
-import games.studiohummingbird.skhema.properties.Identifier
-import games.studiohummingbird.skhema.properties.Name
-import games.studiohummingbird.skhema.properties.PotentialAction
 
 interface Intangible
     : Thing
 
 fun Intangible(block: MutableIntangible.() -> Unit): Intangible =
     object : MutableIntangible {
+        override var additionalType: AdditionalType? = null
+        override var alternateName: AlternateName? = null
         override var description: Description? = null
+        override var disambiguationDescription: DisambiguationDescription? = null
         override var identifier: Identifier? = null
+        override var image: Image? = null
+        override var mainEntityOfPage: MainEntityOfPage? = null
         override var name: Name? = null
         override var potentialAction: PotentialAction? = null
+        override var sameAs: SameAs? = null
+        override var subjectOf: SubjectOf? = null
+        override var url: URL? = null
     }.apply(block)

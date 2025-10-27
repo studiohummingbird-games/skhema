@@ -16,16 +16,21 @@
  */
 package games.studiohummingbird.skhema.types.mutable
 
+import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.Thing
-import games.studiohummingbird.skhema.properties.Description
-import games.studiohummingbird.skhema.properties.Identifier
-import games.studiohummingbird.skhema.properties.Name
-import games.studiohummingbird.skhema.properties.PotentialAction
 
 interface MutableThing
     : Thing {
+    override var additionalType: AdditionalType?
+    override var alternateName: AlternateName?
     override var description: Description?
+    override var disambiguationDescription: DisambiguationDescription?
     override var identifier: Identifier?
+    override var image: Image?
+    override var mainEntityOfPage: MainEntityOfPage?
     override var name: Name?
     override var potentialAction: PotentialAction?
+    override var sameAs: SameAs?
+    override var subjectOf: SubjectOf?
+    override var url: URL?
 }

@@ -16,15 +16,8 @@
  */
 package games.studiohummingbird.skhema.types
 
+import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.mutable.MutablePlace
-import games.studiohummingbird.skhema.properties.Address
-import games.studiohummingbird.skhema.properties.Description
-import games.studiohummingbird.skhema.properties.GameLocation
-import games.studiohummingbird.skhema.properties.Identifier
-import games.studiohummingbird.skhema.properties.Keywords
-import games.studiohummingbird.skhema.properties.Name
-import games.studiohummingbird.skhema.properties.PotentialAction
-import games.studiohummingbird.skhema.properties.Slogan
 
 interface Place
     : Thing
@@ -34,12 +27,21 @@ interface Place
     val slogan: Slogan?
 }
 
-fun Place(block: MutablePlace.() -> Unit) = object : MutablePlace {
-    override var address: Address? = null
-    override var keywords: Keywords? = null
-    override var slogan: Slogan? = null
-    override var description: Description? = null
-    override var identifier: Identifier? = null
-    override var name: Name? = null
-    override var potentialAction: PotentialAction? = null
-}.apply(block)
+fun Place(block: MutablePlace.() -> Unit) =
+    object : MutablePlace {
+        override var address: Address? = null
+        override var keywords: Keywords? = null
+        override var slogan: Slogan? = null
+        override var additionalType: AdditionalType? = null
+        override var alternateName: AlternateName? = null
+        override var description: Description? = null
+        override var disambiguationDescription: DisambiguationDescription? = null
+        override var identifier: Identifier? = null
+        override var image: Image? = null
+        override var mainEntityOfPage: MainEntityOfPage? = null
+        override var name: Name? = null
+        override var potentialAction: PotentialAction? = null
+        override var sameAs: SameAs? = null
+        override var subjectOf: SubjectOf? = null
+        override var url: URL? = null
+    }.apply(block)

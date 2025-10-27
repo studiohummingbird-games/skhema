@@ -16,20 +16,8 @@
  */
 package games.studiohummingbird.skhema.types
 
+import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.mutable.MutableQuantitativeValue
-import games.studiohummingbird.skhema.properties.AdditionalProperty
-import games.studiohummingbird.skhema.properties.CargoVolume
-import games.studiohummingbird.skhema.properties.Description
-import games.studiohummingbird.skhema.properties.FuelCapacity
-import games.studiohummingbird.skhema.properties.Identifier
-import games.studiohummingbird.skhema.properties.MaxValue
-import games.studiohummingbird.skhema.properties.MembershipPointsEarned
-import games.studiohummingbird.skhema.properties.MinValue
-import games.studiohummingbird.skhema.properties.Name
-import games.studiohummingbird.skhema.properties.PotentialAction
-import games.studiohummingbird.skhema.properties.UnitCode
-import games.studiohummingbird.skhema.properties.UnitText
-import games.studiohummingbird.skhema.properties.Value
 
 interface QuantitativeValue
     : StructuredValue
@@ -52,8 +40,16 @@ fun QuantitativeValue(block: MutableQuantitativeValue.() -> Unit): QuantitativeV
         override var unitCode: UnitCode? = null
         override var unitText: UnitText? = null
         override var value: Value? = null
+        override var additionalType: AdditionalType? = null
+        override var alternateName: AlternateName? = null
         override var description: Description? = null
+        override var disambiguationDescription: DisambiguationDescription? = null
         override var identifier: Identifier? = null
+        override var image: Image? = null
+        override var mainEntityOfPage: MainEntityOfPage? = null
         override var name: Name? = null
         override var potentialAction: PotentialAction? = null
+        override var sameAs: SameAs? = null
+        override var subjectOf: SubjectOf? = null
+        override var url: URL? = null
     }.apply(block)

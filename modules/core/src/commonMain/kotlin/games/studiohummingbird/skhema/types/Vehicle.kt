@@ -16,20 +16,9 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.types.mutable.MutableVehicle
+import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.properties.Brand
-import games.studiohummingbird.skhema.properties.CallSign
-import games.studiohummingbird.skhema.properties.CargoVolume
-import games.studiohummingbird.skhema.properties.Description
-import games.studiohummingbird.skhema.properties.FuelCapacity
-import games.studiohummingbird.skhema.properties.Identifier
-import games.studiohummingbird.skhema.properties.Keywords
-import games.studiohummingbird.skhema.properties.Name
-import games.studiohummingbird.skhema.properties.PotentialAction
-import games.studiohummingbird.skhema.properties.ProductionDate
-import games.studiohummingbird.skhema.properties.PurchaseDate
-import games.studiohummingbird.skhema.properties.Slogan
-import games.studiohummingbird.skhema.properties.VehicleIdentificationNumber
+import games.studiohummingbird.skhema.types.mutable.MutableVehicle
 
 interface Vehicle
     : Product {
@@ -39,18 +28,27 @@ interface Vehicle
     val vehicleIdentificationNumber: VehicleIdentificationNumber?
 }
 
-fun Vehicle(block: MutableVehicle.() -> Unit): Vehicle = object : MutableVehicle {
-    override var callSign: CallSign? = null
-    override var cargoVolume: CargoVolume? = null
-    override var fuelCapacity: FuelCapacity? = null
-    override var vehicleIdentificationNumber: VehicleIdentificationNumber? = null
-    override var brand: Brand? = null
-    override var keywords: Keywords? = null
-    override var productionDate: ProductionDate? = null
-    override var purchaseDate: PurchaseDate? = null
-    override var slogan: Slogan? = null
-    override var description: Description? = null
-    override var identifier: Identifier? = null
-    override var name: Name? = null
-    override var potentialAction: PotentialAction? = null
-}.apply(block)
+fun Vehicle(block: MutableVehicle.() -> Unit): Vehicle =
+    object : MutableVehicle {
+        override var callSign: CallSign? = null
+        override var cargoVolume: CargoVolume? = null
+        override var fuelCapacity: FuelCapacity? = null
+        override var vehicleIdentificationNumber: VehicleIdentificationNumber? = null
+        override var brand: Brand? = null
+        override var keywords: Keywords? = null
+        override var productionDate: ProductionDate? = null
+        override var purchaseDate: PurchaseDate? = null
+        override var slogan: Slogan? = null
+        override var additionalType: AdditionalType? = null
+        override var alternateName: AlternateName? = null
+        override var description: Description? = null
+        override var disambiguationDescription: DisambiguationDescription? = null
+        override var identifier: Identifier? = null
+        override var image: Image? = null
+        override var mainEntityOfPage: MainEntityOfPage? = null
+        override var name: Name? = null
+        override var potentialAction: PotentialAction? = null
+        override var sameAs: SameAs? = null
+        override var subjectOf: SubjectOf? = null
+        override var url: URL? = null
+    }.apply(block)

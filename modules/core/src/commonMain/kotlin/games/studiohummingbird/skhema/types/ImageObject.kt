@@ -1,4 +1,4 @@
-/* PropertyValue.kt
+/* ImageObject.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,14 +16,8 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.properties.*
+import games.studiohummingbird.skhema.properties.Image
 
-interface PropertyValue
-    : StructuredValue
-    , AdditionalProperty {
-    val maxValue: MaxValue?
-    val minValue: MinValue?
-    val unitCode: UnitCode?
-    val unitText: UnitText?
-    val value: Value?
-}
+interface ImageObject
+    : MediaObject
+    , Image

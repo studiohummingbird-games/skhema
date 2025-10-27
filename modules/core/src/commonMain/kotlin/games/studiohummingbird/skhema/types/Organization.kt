@@ -16,20 +16,9 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.types.mutable.MutableOrganization
+import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.properties.Brand
-import games.studiohummingbird.skhema.properties.Address
-import games.studiohummingbird.skhema.properties.Description
-import games.studiohummingbird.skhema.properties.HostingOrganization
-import games.studiohummingbird.skhema.properties.Identifier
-import games.studiohummingbird.skhema.properties.IssuedBy
-import games.studiohummingbird.skhema.properties.Keywords
-import games.studiohummingbird.skhema.properties.Member
-import games.studiohummingbird.skhema.properties.MemberOf
-import games.studiohummingbird.skhema.properties.Name
-import games.studiohummingbird.skhema.properties.PotentialAction
-import games.studiohummingbird.skhema.properties.RecognizedBy
-import games.studiohummingbird.skhema.properties.Slogan
+import games.studiohummingbird.skhema.types.mutable.MutableOrganization
 
 interface Organization
     : Thing
@@ -51,8 +40,16 @@ fun Organization(block: MutableOrganization.() -> Unit): Organization =
         override var hasMemberProgram: MemberProgram? = null
         override var keywords: Keywords? = null
         override var slogan: Slogan? = null
+        override var additionalType: AdditionalType? = null
+        override var alternateName: AlternateName? = null
         override var description: Description? = null
+        override var disambiguationDescription: DisambiguationDescription? = null
         override var identifier: Identifier? = null
+        override var image: Image? = null
+        override var mainEntityOfPage: MainEntityOfPage? = null
         override var name: Name? = null
         override var potentialAction: PotentialAction? = null
+        override var sameAs: SameAs? = null
+        override var subjectOf: SubjectOf? = null
+        override var url: URL? = null
     }.apply(block)

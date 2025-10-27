@@ -17,20 +17,23 @@
 package games.studiohummingbird.skhema.types
 
 import games.studiohummingbird.skhema.annotations.SchemaDslMarker
-import games.studiohummingbird.skhema.properties.About
-import games.studiohummingbird.skhema.properties.Description
-import games.studiohummingbird.skhema.properties.Identifier
-import games.studiohummingbird.skhema.properties.ItemListElement
-import games.studiohummingbird.skhema.properties.Name
-import games.studiohummingbird.skhema.properties.PotentialAction
+import games.studiohummingbird.skhema.properties.*
 
 @SchemaDslMarker
 interface Thing
     : About
     , ItemListElement {
+    val additionalType: AdditionalType?
+    val alternateName: AlternateName?
     val description: Description?
+    val disambiguationDescription: DisambiguationDescription?
     val identifier: Identifier?
+    val image: Image?
+    val mainEntityOfPage: MainEntityOfPage?
     val name: Name?
     val potentialAction: PotentialAction?
+    val sameAs: SameAs?
+    val subjectOf: SubjectOf?
+    val url: URL?
 }
 

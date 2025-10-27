@@ -16,13 +16,7 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.properties.Currency
-import games.studiohummingbird.skhema.properties.HasTierRequirement
-import games.studiohummingbird.skhema.properties.MaxValue
-import games.studiohummingbird.skhema.properties.MinValue
-import games.studiohummingbird.skhema.properties.ValidFrom
-import games.studiohummingbird.skhema.properties.ValidThrough
-import games.studiohummingbird.skhema.properties.Value
+import games.studiohummingbird.skhema.properties.*
 
 interface MonetaryAmount
     : StructuredValue

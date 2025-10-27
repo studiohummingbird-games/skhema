@@ -16,25 +16,28 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.types.mutable.MutableBrand
+import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.properties.Brand
-import games.studiohummingbird.skhema.properties.Description
-import games.studiohummingbird.skhema.properties.Identifier
-import games.studiohummingbird.skhema.properties.Name
-import games.studiohummingbird.skhema.properties.PotentialAction
-import games.studiohummingbird.skhema.properties.Slogan
+import games.studiohummingbird.skhema.types.mutable.MutableBrand
 
 interface Brand
-    : Intangible
-    , Brand {
+    : Intangible, Brand {
     val slogan: Slogan?
 }
 
 fun Brand(block: MutableBrand.() -> Unit): Brand =
     object : MutableBrand {
         override var slogan: Slogan? = null
+        override var additionalType: AdditionalType? = null
+        override var alternateName: AlternateName? = null
         override var description: Description? = null
+        override var disambiguationDescription: DisambiguationDescription? = null
         override var identifier: Identifier? = null
+        override var image: Image? = null
+        override var mainEntityOfPage: MainEntityOfPage? = null
         override var name: Name? = null
         override var potentialAction: PotentialAction? = null
+        override var sameAs: SameAs? = null
+        override var subjectOf: SubjectOf? = null
+        override var url: URL? = null
     }.apply(block)

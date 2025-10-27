@@ -16,12 +16,7 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.properties.Address
-import games.studiohummingbird.skhema.properties.AddressCountry
-import games.studiohummingbird.skhema.properties.AddressLocality
-import games.studiohummingbird.skhema.properties.GameLocation
-import games.studiohummingbird.skhema.properties.PostalCode
-import games.studiohummingbird.skhema.properties.StreetAddress
+import games.studiohummingbird.skhema.properties.*
 
 interface PostalAddress
     : ContactPoint

@@ -16,18 +16,11 @@
  */
 package games.studiohummingbird.skhema.types
 
+import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.mutable.MutableAudience
-import games.studiohummingbird.skhema.properties.AudienceType
-import games.studiohummingbird.skhema.properties.Description
-import games.studiohummingbird.skhema.properties.GeographicArea
-import games.studiohummingbird.skhema.properties.Identifier
-import games.studiohummingbird.skhema.properties.Name
-import games.studiohummingbird.skhema.properties.PermitAudience
-import games.studiohummingbird.skhema.properties.PotentialAction
 
 interface Audience
-    : Intangible
-    , PermitAudience {
+    : Intangible, PermitAudience {
     val audienceType: AudienceType?
     val geographicArea: GeographicArea?
 }
@@ -36,8 +29,16 @@ fun Audience(block: MutableAudience.() -> Unit): Audience =
     object : MutableAudience {
         override var audienceType: AudienceType? = null
         override var geographicArea: GeographicArea? = null
+        override var additionalType: AdditionalType? = null
+        override var alternateName: AlternateName? = null
         override var description: Description? = null
+        override var disambiguationDescription: DisambiguationDescription? = null
         override var identifier: Identifier? = null
+        override var image: Image? = null
+        override var mainEntityOfPage: MainEntityOfPage? = null
         override var name: Name? = null
         override var potentialAction: PotentialAction? = null
+        override var sameAs: SameAs? = null
+        override var subjectOf: SubjectOf? = null
+        override var url: URL? = null
     }.apply(block)
