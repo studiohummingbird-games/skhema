@@ -1,4 +1,4 @@
-/* Duration.kt
+/* MusicRecording.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,10 +16,16 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.properties.Duration
-import games.studiohummingbird.skhema.properties.ValidFor
+import games.studiohummingbird.skhema.properties.ByArtist
+import games.studiohummingbird.skhema.properties.InAlbum
+import games.studiohummingbird.skhema.properties.InPlaylist
+import games.studiohummingbird.skhema.properties.RecordingOf
 
-interface Duration
-    : Quantity
-    , Duration
-    , ValidFor
+interface MusicRecording
+    : CreativeWork {
+    val byArtist: ByArtist?
+    val duration: Duration?
+    val inAlbum: InAlbum?
+    val inPlaylist: InPlaylist?
+    val recordingOf: RecordingOf?
+}

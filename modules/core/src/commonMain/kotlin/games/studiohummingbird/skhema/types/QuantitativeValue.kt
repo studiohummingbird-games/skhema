@@ -17,11 +17,13 @@
 package games.studiohummingbird.skhema.types
 
 import games.studiohummingbird.skhema.properties.*
+import games.studiohummingbird.skhema.properties.Duration
 import games.studiohummingbird.skhema.types.mutable.MutableQuantitativeValue
 
 interface QuantitativeValue
     : StructuredValue
     , CargoVolume
+    , Duration
     , FuelCapacity
     , MembershipPointsEarned {
     val additionalProperty: AdditionalProperty?

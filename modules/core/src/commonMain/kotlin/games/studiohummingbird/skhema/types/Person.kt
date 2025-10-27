@@ -20,7 +20,9 @@ import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.mutable.MutablePerson
 
 interface Person
-    : Thing, Member {
+    : Thing
+    , ByArtist
+    , Member {
     val callSign: CallSign?
     val hasCredential: EducationalOccupationalCredential?
     val memberOf: MemberOf?

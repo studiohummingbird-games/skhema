@@ -1,4 +1,4 @@
-/* Duration.kt
+/* PerformingGroup.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,10 +16,5 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.properties.Duration
-import games.studiohummingbird.skhema.properties.ValidFor
-
-interface Duration
-    : Quantity
-    , Duration
-    , ValidFor
+interface PerformingGroup
+    : Organization

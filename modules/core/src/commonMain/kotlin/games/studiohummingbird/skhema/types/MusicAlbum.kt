@@ -1,4 +1,4 @@
-/* Duration.kt
+/* MusicAlbum.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,10 +16,7 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.properties.Duration
-import games.studiohummingbird.skhema.properties.ValidFor
+import games.studiohummingbird.skhema.properties.InAlbum
 
-interface Duration
-    : Quantity
-    , Duration
-    , ValidFor
+interface MusicAlbum
+    : InAlbum
