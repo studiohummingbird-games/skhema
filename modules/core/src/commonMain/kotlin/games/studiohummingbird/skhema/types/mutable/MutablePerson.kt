@@ -16,16 +16,18 @@
  */
 package games.studiohummingbird.skhema.types.mutable
 
-import games.studiohummingbird.skhema.types.EducationalOccupationalCredential
-import games.studiohummingbird.skhema.types.Person
 import games.studiohummingbird.skhema.properties.CallSign
+import games.studiohummingbird.skhema.properties.Email
 import games.studiohummingbird.skhema.properties.MemberOf
 import games.studiohummingbird.skhema.properties.Skills
+import games.studiohummingbird.skhema.types.EducationalOccupationalCredential
+import games.studiohummingbird.skhema.types.Person
 
 interface MutablePerson
     : Person
     , MutableThing {
     override var callSign: CallSign?
+    override var email: Email?
     override var hasCredential: EducationalOccupationalCredential?
     override var memberOf: MemberOf?
     override var skills: Skills?

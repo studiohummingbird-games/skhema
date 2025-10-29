@@ -24,6 +24,7 @@ interface Person
     , ByArtist
     , Member {
     val callSign: CallSign?
+    val email: Email?
     val hasCredential: EducationalOccupationalCredential?
     val memberOf: MemberOf?
     val skills: Skills?
@@ -32,6 +33,7 @@ interface Person
 fun Person(block: MutablePerson.() -> Unit): Person =
     object : MutablePerson {
         override var callSign: CallSign? = null
+        override var email: Email? = null
         override var hasCredential: EducationalOccupationalCredential? = null
         override var memberOf: MemberOf? = null
         override var skills: Skills? = null

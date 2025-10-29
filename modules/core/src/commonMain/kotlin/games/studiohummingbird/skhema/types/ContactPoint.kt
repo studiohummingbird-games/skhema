@@ -26,11 +26,11 @@ interface ContactPoint
 
 fun ContactPoint(block: MutableContactPoint.() -> Unit): ContactPoint =
     object : MutableContactPoint {
-        override var email: Email? = null
         override var additionalType: AdditionalType? = null
         override var alternateName: AlternateName? = null
         override var description: Description? = null
         override var disambiguationDescription: DisambiguationDescription? = null
+        override var email: Email? = null
         override var identifier: Identifier? = null
         override var image: Image? = null
         override var mainEntityOfPage: MainEntityOfPage? = null

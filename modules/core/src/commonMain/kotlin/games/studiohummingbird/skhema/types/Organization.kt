@@ -29,6 +29,7 @@ interface Organization
     , MemberOf
     , RecognizedBy {
     val address: Address?
+    val email: Email?
     val hasMemberProgram: MemberProgram?
     val keywords: Keywords?
     val slogan: Slogan?
@@ -37,6 +38,7 @@ interface Organization
 fun Organization(block: MutableOrganization.() -> Unit): Organization =
     object : MutableOrganization {
         override var address: Address? = null
+        override var email: Email? = null
         override var hasMemberProgram: MemberProgram? = null
         override var keywords: Keywords? = null
         override var slogan: Slogan? = null

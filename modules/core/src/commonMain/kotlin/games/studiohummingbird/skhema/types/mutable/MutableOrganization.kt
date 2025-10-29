@@ -19,6 +19,7 @@ package games.studiohummingbird.skhema.types.mutable
 import games.studiohummingbird.skhema.types.MemberProgram
 import games.studiohummingbird.skhema.types.Organization
 import games.studiohummingbird.skhema.properties.Address
+import games.studiohummingbird.skhema.properties.Email
 import games.studiohummingbird.skhema.properties.Keywords
 import games.studiohummingbird.skhema.properties.Slogan
 
@@ -26,6 +27,7 @@ interface MutableOrganization
     : Organization
     , MutableThing {
     override var address: Address?
+    override var email: Email?
     override var hasMemberProgram: MemberProgram?
     override var keywords: Keywords?
     override var slogan: Slogan?
