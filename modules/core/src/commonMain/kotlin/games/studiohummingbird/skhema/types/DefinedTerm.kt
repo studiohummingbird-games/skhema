@@ -19,6 +19,7 @@ package games.studiohummingbird.skhema.types
 import games.studiohummingbird.skhema.properties.CompetencyRequired
 import games.studiohummingbird.skhema.properties.CredentialCategory
 import games.studiohummingbird.skhema.properties.EducationalLevel
+import games.studiohummingbird.skhema.properties.Keywords
 import games.studiohummingbird.skhema.properties.Skills
 
 interface DefinedTerm
@@ -26,4 +27,5 @@ interface DefinedTerm
     , CompetencyRequired
     , CredentialCategory
     , EducationalLevel
+    , Keywords
     , Skills
