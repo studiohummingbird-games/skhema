@@ -19,30 +19,49 @@ package games.studiohummingbird.skhema.datatypes
 import games.studiohummingbird.skhema.properties.*
 
 interface Text
-    : Address
+    : AdditionalName
+    , Address
     , AddressCountry
     , AddressLocality
     , AudienceType
+    , Award
     , CallSign
     , CompetencyRequired
     , CredentialCategory
     , Currency
     , Description
+    , Duns
     , EducationalLevel
     , Email
+    , FamilyName
+    , FaxNumber
+    , Gender
+    , GivenName
+    , GlobalLocationNumber
     , HasTierRequirement
+    , HonorificPrefix
+    , HonorificSuffix
     , Identifier
+    , IsicV4
     , ItemListElement
+    , JobTitle
     , Keywords
+    , KnowsAbout
+    , KnowsLanguage
     , MembershipNumber
+    , Naics
     , Name
     , Position
     , PostalCode
     , ProgramName
+    , Pronouns
     , Skills
     , Slogan
     , StreetAddress
+    , TaxID
+    , Telephone
     , UnitCode
     , UnitText
     , Value
+    , VatID
     , VehicleIdentificationNumber
