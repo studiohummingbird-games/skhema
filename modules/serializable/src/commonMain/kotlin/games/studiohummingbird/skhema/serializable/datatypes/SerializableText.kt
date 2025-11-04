@@ -18,6 +18,10 @@ package games.studiohummingbird.skhema.serializable.datatypes
 
 import games.studiohummingbird.skhema.datatypes.Text
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.modules.PolymorphicModuleBuilder
+import kotlinx.serialization.modules.SerializersModule
+import kotlinx.serialization.modules.polymorphic
+import kotlinx.serialization.modules.subclass
 import kotlin.jvm.JvmInline
 
 @JvmInline
@@ -25,4 +29,16 @@ import kotlin.jvm.JvmInline
 value class SerializableText(private val string: String)
     : Text {
     override fun toString(): String = string
+
+    companion object {
+        fun PolymorphicModuleBuilder<Text>.serializableText() {
+            subclass(SerializableText::class)
+        }
+
+        val TextModule = SerializersModule {
+            polymorphic(Text::class) {
+                serializableText()
+            }
+        }
+    }
 }

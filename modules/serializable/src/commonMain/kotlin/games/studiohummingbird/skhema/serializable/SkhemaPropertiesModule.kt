@@ -16,27 +16,81 @@
  */
 package games.studiohummingbird.skhema.serializable
 
-import games.studiohummingbird.skhema.properties.ByArtist
-import games.studiohummingbird.skhema.properties.Keywords
-import games.studiohummingbird.skhema.serializable.datatypes.SerializableText
-import games.studiohummingbird.skhema.serializable.types.SerializablePerson
+import games.studiohummingbird.skhema.properties.*
+import games.studiohummingbird.skhema.serializable.datatypes.SerializableText.Companion.serializableText
+import games.studiohummingbird.skhema.serializable.types.SerializablePerson.Companion.serializablePerson
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
-import kotlinx.serialization.modules.subclass
+
+val AdditionalNameModule = SerializersModule {
+    polymorphic(AdditionalName::class) {
+        serializableText()
+    }
+}
+
+val AddressModule = SerializersModule {
+    polymorphic(Address::class) {
+        serializableText()
+    }
+}
+
+val AddressCountryModule = SerializersModule {
+    polymorphic(AddressCountry::class) {
+        serializableText()
+    }
+}
+
+val AddressLocalityModule = SerializersModule {
+    polymorphic(AddressLocality::class) {
+        serializableText()
+    }
+}
 
 val ByArtistModule = SerializersModule {
     polymorphic(ByArtist::class) {
-        subclass(SerializablePerson::class)
+        serializablePerson()
+    }
+}
+
+val ChildrenModule = SerializersModule {
+    polymorphic(Children::class) {
+        serializablePerson()
+    }
+}
+
+val FamilyNameModule = SerializersModule {
+    polymorphic(FamilyName::class) {
+        serializableText()
+    }
+}
+
+val GivenNameModule = SerializersModule {
+    polymorphic(GivenName::class) {
+        serializableText()
     }
 }
 
 val KeywordsModule = SerializersModule {
     polymorphic(Keywords::class) {
-        subclass(SerializableText::class)
+        serializableText()
+    }
+}
+
+val ParentModule = SerializersModule {
+    polymorphic(Parent::class) {
+        serializablePerson()
     }
 }
 
 val SkhemaPropertiesModule = SerializersModule {
+    include(AdditionalNameModule)
+    include(AddressModule)
+    include(AddressCountryModule)
+    include(AddressLocalityModule)
     include(ByArtistModule)
+    include(ChildrenModule)
+    include(GivenNameModule)
+    include(FamilyNameModule)
     include(KeywordsModule)
+    include(ParentModule)
 }

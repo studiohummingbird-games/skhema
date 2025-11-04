@@ -19,6 +19,10 @@ package games.studiohummingbird.skhema.serializable.types
 import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.Person
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.modules.PolymorphicModuleBuilder
+import kotlinx.serialization.modules.SerializersModule
+import kotlinx.serialization.modules.polymorphic
+import kotlinx.serialization.modules.subclass
 
 @Serializable
 data class SerializablePerson(
@@ -96,4 +100,17 @@ data class SerializablePerson(
     override val sameAs: SameAs? = null,
     override val subjectOf: SubjectOf? = null,
     override val url: URL? = null
-) : Person
+) : Person {
+
+    companion object {
+        fun PolymorphicModuleBuilder<Person>.serializablePerson() {
+            subclass(SerializablePerson::class)
+        }
+
+        val PersonModule = SerializersModule {
+            polymorphic(Person::class) {
+                serializablePerson()
+            }
+        }
+    }
+}

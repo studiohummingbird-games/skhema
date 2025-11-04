@@ -1,4 +1,4 @@
-/* SkhemaTypesModule.kt
+/* SkhemaDataTypesModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,11 +16,9 @@
  */
 package games.studiohummingbird.skhema.serializable
 
-import games.studiohummingbird.skhema.serializable.types.SerializablePerson.Companion.PersonModule
-import games.studiohummingbird.skhema.serializable.types.SerializableThing.Companion.ThingModule
+import games.studiohummingbird.skhema.serializable.datatypes.SerializableText.Companion.TextModule
 import kotlinx.serialization.modules.SerializersModule
 
-val SkhemaTypesModule = SerializersModule {
-    include(PersonModule)
-    include(ThingModule)
+val SkhemaDataTypesModule = SerializersModule {
+    include(TextModule)
 }
