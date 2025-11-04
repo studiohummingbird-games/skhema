@@ -1,4 +1,4 @@
-/* Text.kt
+/* PerformerIn.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,35 +14,6 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.datatypes
+package games.studiohummingbird.skhema.properties
 
-import games.studiohummingbird.skhema.properties.*
-
-interface Text
-    : Address
-    , AddressCountry
-    , AddressLocality
-    , AudienceType
-    , CallSign
-    , CompetencyRequired
-    , CredentialCategory
-    , Currency
-    , Description
-    , EducationalLevel
-    , Email
-    , HasTierRequirement
-    , Identifier
-    , ItemListElement
-    , Keywords
-    , MembershipNumber
-    , Name
-    , Position
-    , PostalCode
-    , ProgramName
-    , Skills
-    , Slogan
-    , StreetAddress
-    , UnitCode
-    , UnitText
-    , Value
-    , VehicleIdentificationNumber
+interface PerformerIn

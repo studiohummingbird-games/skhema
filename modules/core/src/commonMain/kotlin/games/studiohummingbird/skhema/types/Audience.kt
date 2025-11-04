@@ -20,7 +20,8 @@ import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.mutable.MutableAudience
 
 interface Audience
-    : Intangible, PermitAudience {
+    : Intangible
+    , PermitAudience {
     val audienceType: AudienceType?
     val geographicArea: GeographicArea?
 }

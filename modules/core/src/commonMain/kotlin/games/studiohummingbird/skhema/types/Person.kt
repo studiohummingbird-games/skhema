@@ -17,36 +17,83 @@
 package games.studiohummingbird.skhema.types
 
 import games.studiohummingbird.skhema.properties.*
-import games.studiohummingbird.skhema.types.mutable.MutablePerson
+import games.studiohummingbird.skhema.properties.Brand
+import games.studiohummingbird.skhema.properties.ContactPoint
 
 interface Person
     : Thing
     , ByArtist
-    , Member {
+    , Children
+    , Colleague
+    , Follows
+    , Funder
+    , Knows
+    , Member
+    , Parent
+    , RelatedTo
+    , Sibling
+    , Sponsor
+    , Spouse {
+    val additionalName: AdditionalName?
+    val address: Address?
+    val affiliation: Affiliation?
+    val agentInteractionStatistic: AgentInteractionStatistic?
+    val alumniOf: AlumniOf?
+    val award: Award?
+    val birthDate: BirthDate?
+    val birthPlace: BirthPlace?
+    val brand: Brand?
     val callSign: CallSign?
+    val children: Children?
+    val colleague: Colleague?
+    val contactPoint: ContactPoint?
+    val deathDate: DeathDate?
+    val deathPlace: DeathPlace?
+    val duns: Duns?
     val email: Email?
-    val hasCredential: EducationalOccupationalCredential?
+    val familyName: FamilyName?
+    val faxNumber: FaxNumber?
+    val follows: Follows?
+    val funder: Funder?
+    val funding: Funding?
+    val gender: Gender?
+    val givenName: GivenName?
+    val globalLocationNumber: GlobalLocationNumber?
+    val hasCertification: HasCertification?
+    val hasCredential: HasCredential?
+    val hasOccupation: HasOccupation?
+    val hasOfferCatalog: HasOfferCatalog?
+    val hasPOS: HasPOS?
+    val height: Height?
+    val homeLocation: HomeLocation?
+    val honorificPrefix: HonorificPrefix?
+    val honorificSuffix: HonorificSuffix?
+    val interactionStatistic: InteractionStatistic?
+    val isicV4: IsicV4?
+    val jobTitle: JobTitle?
+    val knows: Knows?
+    val knowsAbout: KnowsAbout?
+    val knowsLanguage: KnowsLanguage?
+    val makesOffer: MakesOffer?
     val memberOf: MemberOf?
+    val naics: Naics?
+    val nationality: Nationality?
+    val netWorth: NetWorth?
+    val owns: Owns?
+    val parent: Parent?
+    val performerIn: PerformerIn?
+    val pronouns: Pronouns?
+    val publishingPrinciples: PublishingPrinciples?
+    val relatedTo: RelatedTo?
+    val seeks: Seeks?
+    val sibling: Sibling?
     val skills: Skills?
+    val sponsor: Sponsor?
+    val spouse: Spouse?
+    val taxID: TaxID?
+    val telephone: Telephone?
+    val vatID: VatID?
+    val weight: Weight?
+    val workLocation: WorkLocation?
+    val worksFor: WorksFor?
 }
-
-fun Person(block: MutablePerson.() -> Unit): Person =
-    object : MutablePerson {
-        override var callSign: CallSign? = null
-        override var email: Email? = null
-        override var hasCredential: EducationalOccupationalCredential? = null
-        override var memberOf: MemberOf? = null
-        override var skills: Skills? = null
-        override var additionalType: AdditionalType? = null
-        override var alternateName: AlternateName? = null
-        override var description: Description? = null
-        override var disambiguationDescription: DisambiguationDescription? = null
-        override var identifier: Identifier? = null
-        override var image: Image? = null
-        override var mainEntityOfPage: MainEntityOfPage? = null
-        override var name: Name? = null
-        override var potentialAction: PotentialAction? = null
-        override var sameAs: SameAs? = null
-        override var subjectOf: SubjectOf? = null
-        override var url: URL? = null
-    }.apply(block)

@@ -20,7 +20,9 @@ import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.mutable.MutableAdministrativeArea
 
 interface AdministrativeArea
-    : Place, GeographicArea, ValidIn
+    : Place
+    , GeographicArea
+    , ValidIn
 
 fun AdministrativeArea(block: MutableAdministrativeArea.() -> Unit): AdministrativeArea =
     object : MutableAdministrativeArea {

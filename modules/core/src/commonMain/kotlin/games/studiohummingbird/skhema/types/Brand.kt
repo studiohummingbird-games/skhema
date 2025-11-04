@@ -21,7 +21,8 @@ import games.studiohummingbird.skhema.properties.Brand
 import games.studiohummingbird.skhema.types.mutable.MutableBrand
 
 interface Brand
-    : Intangible, Brand {
+    : Intangible
+    , Brand {
     val slogan: Slogan?
 }
 

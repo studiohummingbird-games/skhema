@@ -18,6 +18,7 @@ package games.studiohummingbird.skhema.types.mutable
 
 import games.studiohummingbird.skhema.properties.CallSign
 import games.studiohummingbird.skhema.properties.Email
+import games.studiohummingbird.skhema.properties.HasCredential
 import games.studiohummingbird.skhema.properties.MemberOf
 import games.studiohummingbird.skhema.properties.Skills
 import games.studiohummingbird.skhema.types.EducationalOccupationalCredential
@@ -28,7 +29,7 @@ interface MutablePerson
     , MutableThing {
     override var callSign: CallSign?
     override var email: Email?
-    override var hasCredential: EducationalOccupationalCredential?
+    override var hasCredential: HasCredential?
     override var memberOf: MemberOf?
     override var skills: Skills?
 }
