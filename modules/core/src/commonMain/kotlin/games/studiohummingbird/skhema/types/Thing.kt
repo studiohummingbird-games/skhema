@@ -18,12 +18,40 @@ package games.studiohummingbird.skhema.types
 
 import games.studiohummingbird.skhema.annotations.SchemaDslMarker
 import games.studiohummingbird.skhema.properties.*
-import games.studiohummingbird.skhema.types.mutable.MutableThing
 
 @SchemaDslMarker
 interface Thing
     : About
-    , ItemListElement {
+    , ActionOption
+    , AggregateElement
+    , Category
+    , CharacterAttribute
+    , games.studiohummingbird.skhema.properties.Collection
+    , DataFeedElement
+    , DefaultValue
+    , Error
+    , GameItem
+    , GamePlatform
+    , Instrument
+    , Item
+    , ItemListElement
+    , ItemReviewed
+    , KnowsAbout
+    , MainEntity
+    , Mentions
+    , Object
+    , ObservationAbout
+    , Option
+    , Produces
+    , Quest
+    , Replacee
+    , Replacer
+    , RequiredCollateral
+    , ReservationFor
+    , Result
+    , ServiceOutput
+    , TargetCollection
+{
     val additionalType: AdditionalType?
     val alternateName: AlternateName?
     val description: Description?
@@ -37,19 +65,3 @@ interface Thing
     val subjectOf: SubjectOf?
     val url: URL?
 }
-
-fun Thing(block: MutableThing.() -> Unit): Thing =
-    object : MutableThing {
-        override var additionalType: AdditionalType? = null
-        override var alternateName: AlternateName? = null
-        override var description: Description? = null
-        override var disambiguationDescription: DisambiguationDescription? = null
-        override var identifier: Identifier? = null
-        override var image: Image? = null
-        override var mainEntityOfPage: MainEntityOfPage? = null
-        override var name: Name? = null
-        override var potentialAction: PotentialAction? = null
-        override var sameAs: SameAs? = null
-        override var subjectOf: SubjectOf? = null
-        override var url: URL? = null
-    }.apply(block)
