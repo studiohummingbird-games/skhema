@@ -121,7 +121,8 @@ interface Person
     , Translator
     , UnderName
     , Vendor
-    , Winner {
+    , Winner
+{
     val additionalName: AdditionalName?
     val address: Address?
     val affiliation: Affiliation?

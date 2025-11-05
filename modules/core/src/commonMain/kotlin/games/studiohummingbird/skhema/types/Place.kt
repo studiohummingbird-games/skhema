@@ -65,7 +65,8 @@ interface Place
     , SpatialCoverage
     , ToLocation
     , TripOrigin
-    , WorkLocation {
+    , WorkLocation
+{
     val additionalProperty: AdditionalProperty?
     val address: Address?
     val aggregateRating: AggregateRating?

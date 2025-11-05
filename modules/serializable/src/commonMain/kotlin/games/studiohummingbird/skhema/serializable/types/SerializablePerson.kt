@@ -100,8 +100,9 @@ data class SerializablePerson(
     override val sameAs: SameAs? = null,
     override val subjectOf: SubjectOf? = null,
     override val url: URL? = null
-) : Person {
-
+)
+    : Person
+{
     companion object {
         fun PolymorphicModuleBuilder<Person>.serializablePerson() {
             subclass(SerializablePerson::class)

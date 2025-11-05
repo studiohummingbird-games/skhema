@@ -27,7 +27,8 @@ import kotlin.jvm.JvmInline
 @JvmInline
 @Serializable
 value class SerializableText(private val string: String)
-    : Text {
+    : Text
+{
     override fun toString(): String = string
 
     companion object {
