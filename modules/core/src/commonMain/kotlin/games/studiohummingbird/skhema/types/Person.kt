@@ -22,18 +22,106 @@ import games.studiohummingbird.skhema.properties.ContactPoint
 
 interface Person
     : Thing
+    , AccountablePerson
+    , AcquiredFrom
+    , Actor
+    , Actors
+    , Agent
+    , Alumni
+    , Artist
+    , Athlete
+    , Attendee
+    , Attendees
+    , Author
+    , AwayTeam
+    , BccRecipient
+    , BookingAgent
+    , Borrower
+    , Broker
+    , Buyer
     , ByArtist
+    , Candidate
+    , CcRecipient
+    , Character
     , Children
+    , ClaimInterpreter
+    , Coach
     , Colleague
+    , Colleagues
+    , Colorist
+    , Competitor
+    , Composer
+    , Contributor
+    , CopyrightHolder
+    , Creator
+    , CreditedTo
+    , Customer
+    , Director
+    , Directors
+    , Editor
+    , Employee
+    , Employees
+    , Endorsee
+    , Endorsers
+    , Folowee
     , Follows
+    , Founder
+    , Founders
+    , FundedItem
     , Funder
+    , Grantee
+    , HiringOrganization
+    , HomeTeam
+    , Illustrator
+    , Inker
+    , Instructor
     , Knows
+    , Landlord
+    , LegalRepresentative
+    , LegislationCountersignedBy
+    , LegislationPassedBy
+    , LegislationResponsible
+    , Lender
+    , Letterer
+    , Loser
+    , Lyricist
+    , Maintainer
     , Member
+    , Members
+    , Merchant
+    , MusicBy
+    , MusicGroupMember
+    , OfferedBy
+    , Opponent
+    , Organizer
     , Parent
+    , Parents
+    , Participant
+    , Penciler
+    , Performer
+    , Performers
+    , Producer
+    , Provider
+    , PublishedBy
+    , Publisher
+    , ReadBy
+    , Recipient
+    , Referee
     , RelatedTo
+    , ReviewedBy
+    , SdPublisher
+    , Seller
+    , Sender
     , Sibling
+    , Siblings
+    , SpokenByCharacter
     , Sponsor
-    , Spouse {
+    , Spouse
+    , ToRecipient
+    , Translator
+    , UnderName
+    , Vendor
+    , Winner {
     val additionalName: AdditionalName?
     val address: Address?
     val affiliation: Affiliation?
