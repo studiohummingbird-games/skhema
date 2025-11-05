@@ -17,31 +17,50 @@
 package games.studiohummingbird.skhema.types
 
 import games.studiohummingbird.skhema.properties.*
-import games.studiohummingbird.skhema.types.mutable.MutablePlace
+import games.studiohummingbird.skhema.properties.Event
 
 interface Place
     : Thing
     , GameLocation {
+    val additionalProperty: AdditionalProperty?
     val address: Address?
+    val aggregateRating: AggregateRating?
+    val amenityFeature: AmentityFeature?
+    val branchCode: BranchCode?
+    val containedInPlace: ContainedInPlace?
+    val containsPlace: ContainsPlace?
+    val event: Event?
+    val faxNumber: FaxNumber?
+    val geo: Geo?
+    val geoContains: GeoContains?
+    val geoCoveredBy: GeoCoveredBy?
+    val geoCovers: GeoCovers?
+    val geoCrosses: GeoCrosses?
+    val geoDisjoint: GeoDisjoint?
+    val geoEquals: GeoEquals?
+    val geoIntersects: GeoIntersects?
+    val geoOverlaps: GeoOverlaps?
+    val geoTouches: GeoTouches?
+    val geoWithin: GeoWithin?
+    val globalLocationNumber: GlobalLocationNumber?
+    val hasCertification: HasCertification?
+    val hasDriveThroughService: HasDriveThroughService?
+    val hasGS1DigitalLink: HasGS1DigitalLink?
+    val hasMap: HasMap?
+    val isAccessibleForFree: IsAccessibleForFree?
+    val isicV4: IsicV4
     val keywords: Keywords?
+    val latitude: Latitude?
+    val logo: Logo?
+    val longitude: Longitude?
+    val maximumAttendeeCapacity: MaximumAttendeeCapacity?
+    val openingHoursSpecification: OpeningHoursSpecification?
+    val photo: Photo?
+    val publicAccess: PublicAccess?
+    val review: Review
     val slogan: Slogan?
+    val smokingAllowed: SmokingAllowed?
+    val specialOpeningHoursSpecification: SpecialOpeningHoursSpecification?
+    val telephone: Telephone?
+    val tourBookingPage: TourBookingPage?
 }
-
-fun Place(block: MutablePlace.() -> Unit) =
-    object : MutablePlace {
-        override var address: Address? = null
-        override var keywords: Keywords? = null
-        override var slogan: Slogan? = null
-        override var additionalType: AdditionalType? = null
-        override var alternateName: AlternateName? = null
-        override var description: Description? = null
-        override var disambiguationDescription: DisambiguationDescription? = null
-        override var identifier: Identifier? = null
-        override var image: Image? = null
-        override var mainEntityOfPage: MainEntityOfPage? = null
-        override var name: Name? = null
-        override var potentialAction: PotentialAction? = null
-        override var sameAs: SameAs? = null
-        override var subjectOf: SubjectOf? = null
-        override var url: URL? = null
-    }.apply(block)

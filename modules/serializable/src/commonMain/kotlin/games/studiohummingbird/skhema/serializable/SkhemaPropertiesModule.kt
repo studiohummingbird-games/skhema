@@ -76,6 +76,12 @@ val KeywordsModule = SerializersModule {
     }
 }
 
+val NameModule = SerializersModule {
+    polymorphic(Name::class) {
+        serializableText()
+    }
+}
+
 val ParentModule = SerializersModule {
     polymorphic(Parent::class) {
         serializablePerson()
@@ -89,8 +95,9 @@ val SkhemaPropertiesModule = SerializersModule {
     include(AddressLocalityModule)
     include(ByArtistModule)
     include(ChildrenModule)
-    include(GivenNameModule)
     include(FamilyNameModule)
+    include(GivenNameModule)
     include(KeywordsModule)
+    include(NameModule)
     include(ParentModule)
 }
