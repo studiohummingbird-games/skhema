@@ -21,7 +21,51 @@ import games.studiohummingbird.skhema.properties.Event
 
 interface Place
     : Thing
-    , GameLocation {
+    , Area
+    , AreaServed
+    , AvailableAtOrFrom
+    , BirthPlace
+    , ContainedIn
+    , ContainedInPlace
+    , ContainsPlace
+    , ContentLocation
+    , Course
+    , DeathPlace
+    , DropoffLocation
+    , EligibleRegion
+    , ExerciseCourse
+    , FoodEstablishment
+    , FoundingLocation
+    , FromLocation
+    , GameLocation
+    , GeoContains
+    , GeoCoveredBy
+    , GeoCovers
+    , GeoCrosses
+    , GeoDisjoint
+    , GeoEquals
+    , GeoIntersects
+    , GeoOverlaps
+    , GeoTouches
+    , GeoWithin
+    , HasPOS
+    , HomeLocation
+    , IneligibleRegion
+    , ItemLocation
+    , Itinerary
+    , JobLocation
+    , Location
+    , LocationCreated
+    , ObservationAbout
+    , PickupLocation
+    , RegionsAllowed
+    , ServiceArea
+    , ServiceLocation
+    , Spatial
+    , SpatialCoverage
+    , ToLocation
+    , TripOrigin
+    , WorkLocation {
     val additionalProperty: AdditionalProperty?
     val address: Address?
     val aggregateRating: AggregateRating?
