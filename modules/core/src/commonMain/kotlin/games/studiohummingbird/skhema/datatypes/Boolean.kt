@@ -16,7 +16,7 @@
  */
 package games.studiohummingbird.skhema.datatypes
 
-interface Boolean
+sealed interface Boolean
 
 data object True : Boolean
 
