@@ -39,7 +39,7 @@ data class SerializableThing(
     override val subjectOf: SubjectOf? = null,
     override val url: URL? = null
 )
-    : Thing
+: Thing
 {
     companion object {
         fun PolymorphicModuleBuilder<Thing>.serializableThing() {
