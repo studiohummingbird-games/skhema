@@ -19,9 +19,11 @@ package games.studiohummingbird.skhema.serializable.types
 import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.MemberProgram
 import games.studiohummingbird.skhema.types.MusicGroup
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.modules.PolymorphicModuleBuilder
 import kotlinx.serialization.modules.subclass
 
+@Serializable
 data class SerializableMusicGroup(
     override val address: Address? = null,
     override val email: Email? = null,

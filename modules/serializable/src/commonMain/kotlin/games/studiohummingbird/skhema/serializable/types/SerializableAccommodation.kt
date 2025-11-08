@@ -18,9 +18,11 @@ package games.studiohummingbird.skhema.serializable.types
 
 import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.Accommodation
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.modules.PolymorphicModuleBuilder
 import kotlinx.serialization.modules.subclass
 
+@Serializable
 data class SerializableAccommodation(
     override val accommodationCategory: AccommodationCategory? = null,
     override val accommodationFloorPlan: AccommodationFloorPlan? = null,

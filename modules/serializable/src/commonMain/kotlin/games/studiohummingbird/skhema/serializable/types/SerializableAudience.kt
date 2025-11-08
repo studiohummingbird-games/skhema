@@ -2,9 +2,11 @@ package games.studiohummingbird.skhema.serializable.types
 
 import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.Audience
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.modules.PolymorphicModuleBuilder
 import kotlinx.serialization.modules.subclass
 
+@Serializable
 data class SerializableAudience(
     override val audienceType: AudienceType? = null,
     override val geographicArea: GeographicArea? = null,

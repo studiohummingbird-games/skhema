@@ -18,9 +18,11 @@ package games.studiohummingbird.skhema.serializable.types
 
 import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.DefinedTerm
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.modules.PolymorphicModuleBuilder
 import kotlinx.serialization.modules.subclass
 
+@Serializable
 data class SerializableDefinedTerm(
     override val additionalType: AdditionalType? = null,
     override val alternateName: AlternateName? = null,

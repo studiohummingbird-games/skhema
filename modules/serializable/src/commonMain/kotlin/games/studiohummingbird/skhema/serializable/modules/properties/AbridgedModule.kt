@@ -1,4 +1,4 @@
-/* PetsAllowedModule.kt
+/* AbridgedModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,15 +16,14 @@
  */
 package games.studiohummingbird.skhema.serializable.modules.properties
 
-import games.studiohummingbird.skhema.properties.PetsAllowed
+import games.studiohummingbird.skhema.properties.Abridged
 import games.studiohummingbird.skhema.serializable.datatypes.serializableBoolean
-import games.studiohummingbird.skhema.serializable.datatypes.serializableText
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val PetsAllowedModule = SerializersModule {
-    polymorphic(PetsAllowed::class) {
+val AbridgedModule = SerializersModule {
+    polymorphic(Abridged::class) {
         serializableBoolean()
-        serializableText()
     }
 }
+

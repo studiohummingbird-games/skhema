@@ -17,12 +17,14 @@
 package games.studiohummingbird.skhema.serializable.modules.properties
 
 import games.studiohummingbird.skhema.properties.Value
+import games.studiohummingbird.skhema.serializable.datatypes.serializableBoolean
 import games.studiohummingbird.skhema.serializable.datatypes.serializableText
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
 val ValueModule = SerializersModule {
     polymorphic(Value::class) {
+        serializableBoolean()
         serializableText()
     }
 }

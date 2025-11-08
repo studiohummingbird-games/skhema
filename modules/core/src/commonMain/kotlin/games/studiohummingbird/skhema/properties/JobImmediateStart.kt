@@ -1,4 +1,4 @@
-/* PetsAllowedModule.kt
+/* JobImmediateStart.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,17 +14,6 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.serializable.modules.properties
+package games.studiohummingbird.skhema.properties
 
-import games.studiohummingbird.skhema.properties.PetsAllowed
-import games.studiohummingbird.skhema.serializable.datatypes.serializableBoolean
-import games.studiohummingbird.skhema.serializable.datatypes.serializableText
-import kotlinx.serialization.modules.SerializersModule
-import kotlinx.serialization.modules.polymorphic
-
-val PetsAllowedModule = SerializersModule {
-    polymorphic(PetsAllowed::class) {
-        serializableBoolean()
-        serializableText()
-    }
-}
+interface JobImmediateStart

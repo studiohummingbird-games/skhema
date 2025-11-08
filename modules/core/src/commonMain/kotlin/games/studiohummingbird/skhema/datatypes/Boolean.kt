@@ -16,15 +16,41 @@
  */
 package games.studiohummingbird.skhema.datatypes
 
-sealed interface Boolean
+import games.studiohummingbird.skhema.properties.*
 
-data object True : Boolean
-
-data object False : Boolean
-
-fun Boolean(boolean: kotlin.Boolean): Boolean =
-    if (boolean) {
-        True
-    } else {
-        False
-    }
+interface Boolean
+    : Abridged
+    , AcceptsReservations
+    , CashBack
+    , ContactlessPayment
+    , DirectApply
+    , DoesNotShip
+    , DomiciledMortgage
+    , ExperiencedInPlaceOfEducation
+    , Free
+    , HasDriveThroughService
+    , HealthPlanCostSharing
+    , InStoreReturnsOffered
+    , IsAcceptingNewPatients
+    , IsAccessibleForFree
+    , IsAvailableGenerically
+    , IsFamilyFriendly
+    , IsGift
+    , IsLiveBroadcast
+    , IsProprietary
+    , IsResizable
+    , IsUnlabelledFallback
+    , JobImmediateStart
+    , MultipleValues
+    , OffersPrescriptionByMail
+    , PetsAllowed
+    , PublicAccess
+    , ReadonlyValue
+    , RecourseLoan
+    , RenegotiableLoan
+    , RepresentativeOfPage
+    , RequiresSubscription
+    , SmokingAllowed
+    , Value
+    , ValueAddedTaxIncluded
+    , ValueRequired

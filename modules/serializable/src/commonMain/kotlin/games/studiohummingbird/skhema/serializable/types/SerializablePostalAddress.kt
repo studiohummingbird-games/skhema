@@ -18,9 +18,11 @@ package games.studiohummingbird.skhema.serializable.types
 
 import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.PostalAddress
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.modules.PolymorphicModuleBuilder
 import kotlinx.serialization.modules.subclass
 
+@Serializable
 data class SerializablePostalAddress(
     override val addressCountry: AddressCountry? = null,
     override val addressLocality: AddressLocality? = null,
