@@ -16,8 +16,9 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.properties.*
-import games.studiohummingbird.skhema.types.mutable.MutableMemberProgram
+import games.studiohummingbird.skhema.properties.HasTiers
+import games.studiohummingbird.skhema.properties.HostingOrganization
+import games.studiohummingbird.skhema.properties.IsTierOf
 
 interface MemberProgram
     : Intangible
@@ -25,21 +26,3 @@ interface MemberProgram
     val hasTiers: HasTiers?
     val hostingOrganization: HostingOrganization?
 }
-
-fun MemberProgram(block: MutableMemberProgram.() -> Unit): MemberProgram =
-    object : MutableMemberProgram {
-        override var hasTiers: HasTiers? = null
-        override var hostingOrganization: HostingOrganization? = null
-        override var additionalType: AdditionalType? = null
-        override var alternateName: AlternateName? = null
-        override var description: Description? = null
-        override var disambiguationDescription: DisambiguationDescription? = null
-        override var identifier: Identifier? = null
-        override var image: Image? = null
-        override var mainEntityOfPage: MainEntityOfPage? = null
-        override var name: Name? = null
-        override var potentialAction: PotentialAction? = null
-        override var sameAs: SameAs? = null
-        override var subjectOf: SubjectOf? = null
-        override var url: URL? = null
-    }.apply(block)
