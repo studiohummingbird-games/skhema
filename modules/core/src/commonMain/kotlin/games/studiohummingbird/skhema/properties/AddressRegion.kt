@@ -1,4 +1,4 @@
-/* AmentityFeature.kt
+/* AddressRegion.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,4 +16,4 @@
  */
 package games.studiohummingbird.skhema.properties
 
-interface AmentityFeature
+interface AddressRegion

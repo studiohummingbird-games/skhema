@@ -70,7 +70,7 @@ interface Place
     val additionalProperty: AdditionalProperty?
     val address: Address?
     val aggregateRating: AggregateRating?
-    val amenityFeature: AmentityFeature?
+    val amenityFeature: AmenityFeature?
     val branchCode: BranchCode?
     val containedInPlace: ContainedInPlace?
     val containsPlace: ContainsPlace?

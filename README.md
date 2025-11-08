@@ -87,6 +87,9 @@ possible, and be able to utilize those expectations to solve harder problems mor
 ## How-to
 ### Add a new type
 - Create the interface in :core
+  - Add the supertype interface first
+  - Add the properties for the type
+  - Add the properties that the type can be after the supertypes
 - Create a serializable data class in :serializable
 - Create a subclass function under the data class
 - Add the Type as a subclass to Thing (and other parent types)
@@ -94,3 +97,7 @@ possible, and be able to utilize those expectations to solve harder problems mor
 - Include the module in the Types module
 
 ### Add a new property
+- Create the interface in :core
+- Add the property interface as a super type to the types it can be
+- Create a module file in :serializable
+- Include the module in the Properties module

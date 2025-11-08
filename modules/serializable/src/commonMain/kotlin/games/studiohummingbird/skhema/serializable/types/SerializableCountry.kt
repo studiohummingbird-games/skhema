@@ -25,7 +25,7 @@ data class SerializableCountry(
     override val additionalProperty: AdditionalProperty? = null,
     override val address: Address? = null,
     override val aggregateRating: AggregateRating? = null,
-    override val amenityFeature: AmentityFeature? = null,
+    override val amenityFeature: AmenityFeature? = null,
     override val branchCode: BranchCode? = null,
     override val containedInPlace: ContainedInPlace? = null,
     override val containsPlace: ContainsPlace? = null,
