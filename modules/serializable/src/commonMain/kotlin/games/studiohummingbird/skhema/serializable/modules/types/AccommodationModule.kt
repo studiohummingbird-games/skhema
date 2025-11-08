@@ -17,6 +17,7 @@
 package games.studiohummingbird.skhema.serializable.modules.types
 
 import games.studiohummingbird.skhema.serializable.types.serializableAccommodation
+import games.studiohummingbird.skhema.serializable.types.serializableApartment
 import games.studiohummingbird.skhema.types.Accommodation
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
@@ -24,5 +25,6 @@ import kotlinx.serialization.modules.polymorphic
 val AccommodationModule = SerializersModule {
     polymorphic(Accommodation::class) {
         serializableAccommodation()
+        serializableApartment()
     }
 }
