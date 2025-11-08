@@ -108,7 +108,7 @@ data class SerializablePatient(
     override val suggestedGender: SuggestedGender? = null,
     override val suggestedMaxAge: SuggestedMaxAge? = null,
     override val suggestedMeasurement: SuggestedMeasurement? = null,
-    override val suggestedMinAge: SuggestedMinAge?
+    override val suggestedMinAge: SuggestedMinAge? = null
 )
 : Patient
 

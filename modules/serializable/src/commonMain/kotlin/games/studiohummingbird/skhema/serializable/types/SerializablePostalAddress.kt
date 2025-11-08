@@ -38,7 +38,7 @@ data class SerializablePostalAddress(
     override val potentialAction: PotentialAction? = null,
     override val sameAs: SameAs? = null,
     override val subjectOf: SubjectOf? = null,
-    override val url: URL?
+    override val url: URL? = null
 )
 : PostalAddress
 

@@ -24,7 +24,7 @@ import kotlinx.serialization.modules.polymorphic
 
 val PersonModule = SerializersModule {
     polymorphic(Person::class) {
-        serializablePerson()
         serializablePatient()
+        serializablePerson()
     }
 }
