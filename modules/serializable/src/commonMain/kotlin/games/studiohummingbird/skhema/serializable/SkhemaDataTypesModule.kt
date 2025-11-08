@@ -16,9 +16,11 @@
  */
 package games.studiohummingbird.skhema.serializable
 
-import games.studiohummingbird.skhema.serializable.datatypes.SerializableText.Companion.TextModule
+import games.studiohummingbird.skhema.serializable.modules.datatypes.TextModule
+import games.studiohummingbird.skhema.serializable.modules.datatypes.URLModule
 import kotlinx.serialization.modules.SerializersModule
 
 val SkhemaDataTypesModule = SerializersModule {
     include(TextModule)
+    include(URLModule)
 }

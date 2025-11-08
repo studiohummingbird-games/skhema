@@ -18,6 +18,8 @@ package games.studiohummingbird.skhema.serializable.types
 
 import games.studiohummingbird.skhema.properties.*
 import games.studiohummingbird.skhema.types.Action
+import kotlinx.serialization.modules.PolymorphicModuleBuilder
+import kotlinx.serialization.modules.subclass
 
 data class SerializableAction(
     override val actionProcess: ActionProcess? = null,
@@ -32,7 +34,7 @@ data class SerializableAction(
     override val provider: Provider? = null,
     override val result: Result? = null,
     override val startTime: StartTime? = null,
-    override val target: Target? = null,
+    override val target: games.studiohummingbird.skhema.properties.Target? = null,
     override val additionalType: AdditionalType? = null,
     override val alternateName: AlternateName? = null,
     override val description: Description? = null,
@@ -46,4 +48,8 @@ data class SerializableAction(
     override val subjectOf: SubjectOf? = null,
     override val url: URL? = null
 )
-    : Action
+: Action
+
+fun PolymorphicModuleBuilder<Action>.serializableAction() {
+    subclass(SerializableAction::class)
+}

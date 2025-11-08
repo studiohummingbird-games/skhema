@@ -1,4 +1,4 @@
-/* SerializablePerson.kt
+/* SerializablePatient.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,13 +17,13 @@
 package games.studiohummingbird.skhema.serializable.types
 
 import games.studiohummingbird.skhema.properties.*
-import games.studiohummingbird.skhema.types.Person
+import games.studiohummingbird.skhema.types.Patient
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.modules.PolymorphicModuleBuilder
 import kotlinx.serialization.modules.subclass
 
 @Serializable
-data class SerializablePerson(
+data class SerializablePatient(
     override val additionalName: AdditionalName? = null,
     override val address: Address? = null,
     override val affiliation: Affiliation? = null,
@@ -97,10 +97,21 @@ data class SerializablePerson(
     override val potentialAction: PotentialAction? = null,
     override val sameAs: SameAs? = null,
     override val subjectOf: SubjectOf? = null,
-    override val url: URL? = null
+    override val url: URL? = null,
+    override val audienceType: AudienceType? = null,
+    override val geographicArea: GeographicArea? = null,
+    override val healthCondition: HealthCondition? = null,
+    override val requiredGender: RequiredGender? = null,
+    override val requiredMaxAge: RequiredMaxAge? = null,
+    override val requiredMinAge: RequiredMinAge? = null,
+    override val suggestedAge: SuggestedAge? = null,
+    override val suggestedGender: SuggestedGender? = null,
+    override val suggestedMaxAge: SuggestedMaxAge? = null,
+    override val suggestedMeasurement: SuggestedMeasurement? = null,
+    override val suggestedMinAge: SuggestedMinAge?
 )
-: Person
+: Patient
 
-fun PolymorphicModuleBuilder<Person>.serializablePerson() {
-    subclass(SerializablePerson::class)
+fun PolymorphicModuleBuilder<Patient>.serializablePatient() {
+    subclass(SerializablePatient::class)
 }

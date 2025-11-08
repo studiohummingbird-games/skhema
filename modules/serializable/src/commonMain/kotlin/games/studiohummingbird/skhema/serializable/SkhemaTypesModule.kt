@@ -16,11 +16,18 @@
  */
 package games.studiohummingbird.skhema.serializable
 
-import games.studiohummingbird.skhema.serializable.types.SerializablePerson.Companion.PersonModule
-import games.studiohummingbird.skhema.serializable.types.SerializableThing.Companion.ThingModule
+import games.studiohummingbird.skhema.serializable.modules.types.*
 import kotlinx.serialization.modules.SerializersModule
 
 val SkhemaTypesModule = SerializersModule {
+    include(ActionModule)
+    include(AudienceModule)
+    include(CountryModule)
+    include(DefinedTermModule)
+    include(MusicGroupModule)
+    include(PatientModule)
     include(PersonModule)
+    include(PlaceModule)
+    include(PostalAddressModule)
     include(ThingModule)
 }

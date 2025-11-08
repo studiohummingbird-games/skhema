@@ -1,4 +1,4 @@
-/* SerializableThing.kt
+/* SerializableMusicGroup.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,13 +17,17 @@
 package games.studiohummingbird.skhema.serializable.types
 
 import games.studiohummingbird.skhema.properties.*
-import games.studiohummingbird.skhema.types.Thing
-import kotlinx.serialization.Serializable
+import games.studiohummingbird.skhema.types.MemberProgram
+import games.studiohummingbird.skhema.types.MusicGroup
 import kotlinx.serialization.modules.PolymorphicModuleBuilder
 import kotlinx.serialization.modules.subclass
 
-@Serializable
-data class SerializableThing(
+data class SerializableMusicGroup(
+    override val address: Address? = null,
+    override val email: Email? = null,
+    override val hasMemberProgram: MemberProgram? = null,
+    override val keywords: Keywords? = null,
+    override val slogan: Slogan? = null,
     override val additionalType: AdditionalType? = null,
     override val alternateName: AlternateName? = null,
     override val description: Description? = null,
@@ -35,10 +39,10 @@ data class SerializableThing(
     override val potentialAction: PotentialAction? = null,
     override val sameAs: SameAs? = null,
     override val subjectOf: SubjectOf? = null,
-    override val url: URL? = null
+    override val url: URL?
 )
-: Thing
+: MusicGroup
 
-fun PolymorphicModuleBuilder<Thing>.serializableThing() {
-    subclass(SerializableThing::class)
+fun PolymorphicModuleBuilder<MusicGroup>.serializableMusicGroup() {
+    subclass(SerializableMusicGroup::class)
 }

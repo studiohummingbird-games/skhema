@@ -1,4 +1,4 @@
-/* SerializableThing.kt
+/* SerializableDefinedTerm.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,13 +17,11 @@
 package games.studiohummingbird.skhema.serializable.types
 
 import games.studiohummingbird.skhema.properties.*
-import games.studiohummingbird.skhema.types.Thing
-import kotlinx.serialization.Serializable
+import games.studiohummingbird.skhema.types.DefinedTerm
 import kotlinx.serialization.modules.PolymorphicModuleBuilder
 import kotlinx.serialization.modules.subclass
 
-@Serializable
-data class SerializableThing(
+data class SerializableDefinedTerm(
     override val additionalType: AdditionalType? = null,
     override val alternateName: AlternateName? = null,
     override val description: Description? = null,
@@ -35,10 +33,10 @@ data class SerializableThing(
     override val potentialAction: PotentialAction? = null,
     override val sameAs: SameAs? = null,
     override val subjectOf: SubjectOf? = null,
-    override val url: URL? = null
+    override val url: URL?
 )
-: Thing
+: DefinedTerm
 
-fun PolymorphicModuleBuilder<Thing>.serializableThing() {
-    subclass(SerializableThing::class)
+fun PolymorphicModuleBuilder<DefinedTerm>.serializableDefinedTerm() {
+    subclass(SerializableDefinedTerm::class)
 }

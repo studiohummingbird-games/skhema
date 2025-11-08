@@ -1,4 +1,4 @@
-/* SerializableText.kt
+/* PatientModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,22 +14,16 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.serializable.datatypes
+package games.studiohummingbird.skhema.serializable.modules.types
 
-import games.studiohummingbird.skhema.datatypes.Text
-import kotlinx.serialization.Serializable
-import kotlinx.serialization.modules.PolymorphicModuleBuilder
-import kotlinx.serialization.modules.subclass
-import kotlin.jvm.JvmInline
+import games.studiohummingbird.skhema.serializable.types.serializablePatient
+import games.studiohummingbird.skhema.types.Patient
+import kotlinx.serialization.modules.SerializersModule
+import kotlinx.serialization.modules.polymorphic
 
-@JvmInline
-@Serializable
-value class SerializableText(private val string: String)
-: Text
-{
-    override fun toString(): String = string
+val PatientModule = SerializersModule {
+    polymorphic(Patient::class) {
+        serializablePatient()
+    }
 }
 
-fun PolymorphicModuleBuilder<Text>.serializableText() {
-    subclass(SerializableText::class)
-}

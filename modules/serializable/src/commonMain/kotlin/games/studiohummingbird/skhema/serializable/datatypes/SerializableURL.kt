@@ -1,4 +1,4 @@
-/* SerializableText.kt
+/* SerializableURL.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@
  */
 package games.studiohummingbird.skhema.serializable.datatypes
 
-import games.studiohummingbird.skhema.datatypes.Text
+import games.studiohummingbird.skhema.datatypes.URL
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.modules.PolymorphicModuleBuilder
 import kotlinx.serialization.modules.subclass
@@ -24,12 +24,12 @@ import kotlin.jvm.JvmInline
 
 @JvmInline
 @Serializable
-value class SerializableText(private val string: String)
-: Text
+value class SerializableURL(private val string: String)
+: URL
 {
     override fun toString(): String = string
 }
 
-fun PolymorphicModuleBuilder<Text>.serializableText() {
-    subclass(SerializableText::class)
+fun PolymorphicModuleBuilder<URL>.serializableURL() {
+    subclass(SerializableURL::class)
 }

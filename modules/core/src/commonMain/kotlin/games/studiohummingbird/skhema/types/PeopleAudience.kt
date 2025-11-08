@@ -1,4 +1,4 @@
-/* SerializableText.kt
+/* PeopleAudience.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,22 +14,19 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.serializable.datatypes
+package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.datatypes.Text
-import kotlinx.serialization.Serializable
-import kotlinx.serialization.modules.PolymorphicModuleBuilder
-import kotlinx.serialization.modules.subclass
-import kotlin.jvm.JvmInline
+import games.studiohummingbird.skhema.properties.*
 
-@JvmInline
-@Serializable
-value class SerializableText(private val string: String)
-: Text
-{
-    override fun toString(): String = string
-}
-
-fun PolymorphicModuleBuilder<Text>.serializableText() {
-    subclass(SerializableText::class)
+interface PeopleAudience
+    : Audience {
+    val healthCondition: HealthCondition?
+    val requiredGender: RequiredGender?
+    val requiredMaxAge: RequiredMaxAge?
+    val requiredMinAge: RequiredMinAge?
+    val suggestedAge: SuggestedAge?
+    val suggestedGender: SuggestedGender?
+    val suggestedMaxAge: SuggestedMaxAge?
+    val suggestedMeasurement: SuggestedMeasurement?
+    val suggestedMinAge: SuggestedMinAge?
 }
