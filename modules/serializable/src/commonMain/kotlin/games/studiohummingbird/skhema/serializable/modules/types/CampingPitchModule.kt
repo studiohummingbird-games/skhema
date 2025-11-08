@@ -1,4 +1,4 @@
-/* AccommodationModule.kt
+/* CampingPitchModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,17 +16,13 @@
  */
 package games.studiohummingbird.skhema.serializable.modules.types
 
-import games.studiohummingbird.skhema.serializable.types.serializableAccommodation
-import games.studiohummingbird.skhema.serializable.types.serializableApartment
 import games.studiohummingbird.skhema.serializable.types.serializableCampingPitch
-import games.studiohummingbird.skhema.types.Accommodation
+import games.studiohummingbird.skhema.types.CampingPitch
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val AccommodationModule = SerializersModule {
-    polymorphic(Accommodation::class) {
-        serializableAccommodation()
-        serializableApartment()
+val CampingPitchModule = SerializersModule {
+    polymorphic(CampingPitch::class) {
         serializableCampingPitch()
     }
 }

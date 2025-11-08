@@ -25,7 +25,9 @@ val ThingModule = SerializersModule {
     polymorphic(Thing::class) {
         serializableAccommodation()
         serializableAction()
+        serializableApartment()
         serializableAudience()
+        serializableCampingPitch()
         serializableCountry()
         serializableDefinedTerm()
         serializableMusicGroup()
