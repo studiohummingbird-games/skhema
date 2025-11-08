@@ -1,4 +1,4 @@
-/* SkhemaTypesModule.kt
+/* Suite.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,24 +14,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.serializable
+package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.serializable.modules.types.*
-import kotlinx.serialization.modules.SerializersModule
+interface Suite
+: Accommodation
 
-val SkhemaTypesModule = SerializersModule {
-    include(AccommodationModule)
-    include(ActionModule)
-    include(ApartmentModule)
-    include(AudienceModule)
-    include(CampingPitchModule)
-    include(CountryModule)
-    include(DefinedTermModule)
-    include(MusicGroupModule)
-    include(PatientModule)
-    include(PersonModule)
-    include(PlaceModule)
-    include(PostalAddressModule)
-    include(SuiteModule)
-    include(ThingModule)
-}

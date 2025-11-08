@@ -35,6 +35,7 @@ val ThingModule = SerializersModule {
         serializablePerson()
         serializablePlace()
         serializablePostalAddress()
+        serializableSuite()
         serializableThing()
     }
 }
