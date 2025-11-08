@@ -83,3 +83,14 @@ I want to standardize the fuck out of as much as possible. There is so much unta
 I want to push the boundaries of what is possible with what we already have.
 I want people to have an intuitive understanding about the relationships between objects across as many domains as
 possible, and be able to utilize those expectations to solve harder problems more quickly.
+
+## How-to
+### Add a new type
+- Create the interface in :core
+- Create a serializable data class in :serializable
+- Create a subclass function under the data class
+- Add the Type as a subclass to Thing (and other parent types)
+- Create a module file in :serializable
+- Include the module in the Types module
+
+### Add a new property
