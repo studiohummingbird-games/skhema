@@ -17,7 +17,6 @@
 package games.studiohummingbird.skhema.types
 
 import games.studiohummingbird.skhema.properties.*
-import games.studiohummingbird.skhema.types.mutable.MutableAdministrativeArea
 
 interface AdministrativeArea
     : Place

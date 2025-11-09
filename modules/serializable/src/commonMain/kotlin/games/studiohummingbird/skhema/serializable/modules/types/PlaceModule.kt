@@ -16,13 +16,22 @@
  */
 package games.studiohummingbird.skhema.serializable.modules.types
 
-import games.studiohummingbird.skhema.serializable.types.serializablePlace
+import games.studiohummingbird.skhema.serializable.types.*
 import games.studiohummingbird.skhema.types.Place
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
 val PlaceModule = SerializersModule {
     polymorphic(Place::class) {
+        serializableAccommodation()
+        serializableApartment()
+        serializableCampingPitch()
+        serializableHotelRoom()
+        serializableHouse()
+        serializableMeetingRoom()
         serializablePlace()
+        serializableRoom()
+        serializableSingleFamilyResidence()
+        serializableSuite()
     }
 }

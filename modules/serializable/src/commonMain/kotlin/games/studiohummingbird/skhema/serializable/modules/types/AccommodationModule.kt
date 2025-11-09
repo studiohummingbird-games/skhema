@@ -16,10 +16,7 @@
  */
 package games.studiohummingbird.skhema.serializable.modules.types
 
-import games.studiohummingbird.skhema.serializable.types.serializableAccommodation
-import games.studiohummingbird.skhema.serializable.types.serializableApartment
-import games.studiohummingbird.skhema.serializable.types.serializableCampingPitch
-import games.studiohummingbird.skhema.serializable.types.serializableSuite
+import games.studiohummingbird.skhema.serializable.types.*
 import games.studiohummingbird.skhema.types.Accommodation
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
@@ -29,6 +26,11 @@ val AccommodationModule = SerializersModule {
         serializableAccommodation()
         serializableApartment()
         serializableCampingPitch()
+        serializableHotelRoom()
+        serializableHouse()
+        serializableMeetingRoom()
+        serializableRoom()
+        serializableSingleFamilyResidence()
         serializableSuite()
     }
 }

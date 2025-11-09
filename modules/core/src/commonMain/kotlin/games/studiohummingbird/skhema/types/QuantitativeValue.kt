@@ -21,14 +21,89 @@ import games.studiohummingbird.skhema.properties.Duration
 
 interface QuantitativeValue
     : StructuredValue
+    , AccelerationTime
+    , ActivityDuration
+    , ActivityFrequency
+    , AdvanceBookingRequirement
+    , AnnualPercentageRate
+    , BillingDuration
+    , BroadcastFrequencyValue
     , CargoVolume
+    , DeliveryLeadTime
+    , Depth
     , Duration
+    , DurationOfWarranty
+    , EligibleDuration
+    , EligibleQuantity
+    , EngineDisplacement
+    , EnginePower
+    , FloorSize
     , FuelCapacity
-    , MembershipPointsEarned {
+    , FuelConsumption
+    , FuelEfficiency
+    , HandlingTime
+    , HasMeasurement
+    , Height
+    , IncentiveAmount
+    , Intensity
+    , InterestRate
+    , InventoryLevel
+    , LeaseLength
+    , LoanTerm
+    , MarginOfError
+    , MaterialExtent
+    , MembershipPointsEarned
+    , MileageFromOdometer
+    , MolecularWeight
+    , MonoisotopicMolecularWeight
+    , NumAdults
+    , NumChildren
+    , NumItems
+    , NumberOfAccommodationUnits
+    , NumberOfAvailableAccommodationUnits
+    , NumberOfAxles
+    , NumberOfBedrooms
+    , NumberOfDoors
+    , NumberOfEmployees
+    , NumberOfForwardGears
+    , NumberOfPlayers
+    , NumberOfPreviousOwners
+    , NumberOfRooms
+    , Occupancy
+    , OrderQuantity
+    , PartySize
+    , Payload
+    , RecipeYield
+    , ReferenceQuantity
+    , Repetitions
+    , RequiredQuantity
+    , RestPeriods
+    , RoofLoad
+    , SeatingCapacity
+    , Size
+    , Speed
+    , SuggestedAge
+    , SuggestedMeasurement
+    , TongueWeight
+    , Torque
+    , TrailerWeight
+    , TransitTime
+    , ValueReference
+    , VehicleSeatingCapacity
+    , Weight
+    , WeightTotal
+    , Wheelbase
+    , Width
+    , Workload
+    , YearlyRevenue
+    , YearsInOperation
+    , Yield
+{
     val additionalProperty: AdditionalProperty?
     val maxValue: MaxValue?
     val minValue: MinValue?
     val unitCode: UnitCode?
     val unitText: UnitText?
     val value: Value?
+    val valueReference: ValueReference?
 }

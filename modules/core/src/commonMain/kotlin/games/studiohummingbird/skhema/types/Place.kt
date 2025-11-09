@@ -93,7 +93,7 @@ interface Place
     val hasGS1DigitalLink: HasGS1DigitalLink?
     val hasMap: HasMap?
     val isAccessibleForFree: IsAccessibleForFree?
-    val isicV4: IsicV4
+    val isicV4: IsicV4?
     val keywords: Keywords?
     val latitude: Latitude?
     val logo: Logo?
@@ -102,7 +102,7 @@ interface Place
     val openingHoursSpecification: OpeningHoursSpecification?
     val photo: Photo?
     val publicAccess: PublicAccess?
-    val review: Review
+    val review: Review?
     val slogan: Slogan?
     val smokingAllowed: SmokingAllowed?
     val specialOpeningHoursSpecification: SpecialOpeningHoursSpecification?

@@ -17,4 +17,4 @@
 package games.studiohummingbird.skhema.types
 
 interface StructuredValue
-    : Intangible
+: Intangible
