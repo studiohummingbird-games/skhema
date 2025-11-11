@@ -1,4 +1,4 @@
-/* JurisdictionModule.kt
+/* CityModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,21 +14,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.serializable.modules.properties
+package games.studiohummingbird.skhema.serializable.modules.types
 
-import games.studiohummingbird.skhema.properties.Jurisdiction
-import games.studiohummingbird.skhema.serializable.datatypes.serializableText
-import games.studiohummingbird.skhema.serializable.types.*
+import games.studiohummingbird.skhema.serializable.types.serializableCity
+import games.studiohummingbird.skhema.types.City
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val JurisdictionModule = SerializersModule {
-    polymorphic(Jurisdiction::class) {
-        serializableAdministrativeArea()
+val CityModule = SerializersModule {
+    polymorphic(City::class) {
         serializableCity()
-        serializableCountry()
-        serializableSchoolDistrict()
-        serializableState()
-        serializableText()
     }
 }

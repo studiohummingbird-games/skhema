@@ -18,11 +18,17 @@ package games.studiohummingbird.skhema.serializable.modules.properties
 
 import games.studiohummingbird.skhema.properties.AreaServed
 import games.studiohummingbird.skhema.serializable.datatypes.serializableText
+import games.studiohummingbird.skhema.serializable.types.*
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
 val AreaServedModule = SerializersModule {
     polymorphic(AreaServed::class) {
+        serializableAdministrativeArea()
+        serializableCity()
+        serializableCountry()
+        serializableSchoolDistrict()
+        serializableState()
         serializableText()
     }
 }

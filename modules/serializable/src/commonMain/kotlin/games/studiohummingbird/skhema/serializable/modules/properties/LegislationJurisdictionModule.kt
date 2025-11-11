@@ -18,11 +18,17 @@ package games.studiohummingbird.skhema.serializable.modules.properties
 
 import games.studiohummingbird.skhema.properties.LegislationJurisdiction
 import games.studiohummingbird.skhema.serializable.datatypes.serializableText
+import games.studiohummingbird.skhema.serializable.types.*
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
 val LegislationJurisdictionModule = SerializersModule {
     polymorphic(LegislationJurisdiction::class) {
+        serializableAdministrativeArea()
+        serializableCity()
+        serializableCountry()
+        serializableSchoolDistrict()
+        serializableState()
         serializableText()
     }
 }

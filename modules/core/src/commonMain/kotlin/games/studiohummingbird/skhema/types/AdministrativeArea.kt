@@ -19,6 +19,15 @@ package games.studiohummingbird.skhema.types
 import games.studiohummingbird.skhema.properties.*
 
 interface AdministrativeArea
-    : Place
-    , GeographicArea
-    , ValidIn
+: Place
+, ApplicableLocation
+, ApplicantLocationRequirements
+, AreaServed
+, AvailableIn
+, GeographicArea
+, Jurisdiction
+, LegislationJurisdiction
+, OccupationLocation
+, ServiceArea
+, StudyLocation
+, ValidIn

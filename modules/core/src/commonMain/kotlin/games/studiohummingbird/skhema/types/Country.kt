@@ -16,8 +16,12 @@
  */
 package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.properties.AddressCountry
+import games.studiohummingbird.skhema.properties.*
 
 interface Country
-    : AdministrativeArea
-    , AddressCountry
+: AdministrativeArea
+, AddressCountry
+, ApplicableCountry
+, CountryOfOrigin
+, Nationality
+, ReturnPolicyCountry

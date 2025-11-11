@@ -1,4 +1,4 @@
-/* JurisdictionModule.kt
+/* CountryOfOriginModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.serializable.modules.properties
 
-import games.studiohummingbird.skhema.properties.Jurisdiction
-import games.studiohummingbird.skhema.serializable.datatypes.serializableText
-import games.studiohummingbird.skhema.serializable.types.*
+import games.studiohummingbird.skhema.properties.CountryOfOrigin
+import games.studiohummingbird.skhema.serializable.types.serializableCountry
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val JurisdictionModule = SerializersModule {
-    polymorphic(Jurisdiction::class) {
-        serializableAdministrativeArea()
-        serializableCity()
+val CountryOfOriginModule = SerializersModule {
+    polymorphic(CountryOfOrigin::class) {
         serializableCountry()
-        serializableSchoolDistrict()
-        serializableState()
-        serializableText()
     }
 }

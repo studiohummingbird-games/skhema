@@ -1,4 +1,4 @@
-/* JurisdictionModule.kt
+/* AvailableInModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,17 @@
  */
 package games.studiohummingbird.skhema.serializable.modules.properties
 
-import games.studiohummingbird.skhema.properties.Jurisdiction
-import games.studiohummingbird.skhema.serializable.datatypes.serializableText
+import games.studiohummingbird.skhema.properties.AvailableIn
 import games.studiohummingbird.skhema.serializable.types.*
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val JurisdictionModule = SerializersModule {
-    polymorphic(Jurisdiction::class) {
+val AvailableInModule = SerializersModule {
+    polymorphic(AvailableIn::class) {
         serializableAdministrativeArea()
         serializableCity()
         serializableCountry()
         serializableSchoolDistrict()
         serializableState()
-        serializableText()
     }
 }

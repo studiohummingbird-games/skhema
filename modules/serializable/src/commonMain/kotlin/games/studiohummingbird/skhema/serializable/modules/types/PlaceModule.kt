@@ -24,14 +24,19 @@ import kotlinx.serialization.modules.polymorphic
 val PlaceModule = SerializersModule {
     polymorphic(Place::class) {
         serializableAccommodation()
+        serializableAdministrativeArea()
         serializableApartment()
         serializableCampingPitch()
+        serializableCity()
+        serializableCountry()
         serializableHotelRoom()
         serializableHouse()
         serializableMeetingRoom()
         serializablePlace()
         serializableRoom()
+        serializableSchoolDistrict()
         serializableSingleFamilyResidence()
+        serializableState()
         serializableSuite()
     }
 }
