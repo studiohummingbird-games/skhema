@@ -16,11 +16,7 @@
  */
 package games.studiohummingbird.skhema.datatypes
 
-import games.studiohummingbird.skhema.properties.ProductionDate
-import games.studiohummingbird.skhema.properties.PurchaseDate
-import games.studiohummingbird.skhema.properties.ValidFrom
-import games.studiohummingbird.skhema.properties.ValidThrough
-import games.studiohummingbird.skhema.properties.ValidUntil
+import games.studiohummingbird.skhema.properties.*
 
 interface Date
     : ProductionDate
