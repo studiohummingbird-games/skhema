@@ -33,7 +33,7 @@ interface Action
     val `object`: Object?
     val participant: Participant?
     val provider: Provider?
-    val result: games.studiohummingbird.skhema.properties.Result?
+    val result: Result?
     val startTime: StartTime?
     val target: games.studiohummingbird.skhema.properties.Target?
 }

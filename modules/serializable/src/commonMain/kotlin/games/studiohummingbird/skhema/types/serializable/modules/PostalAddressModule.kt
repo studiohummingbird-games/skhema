@@ -16,8 +16,8 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.serializable.serializablePostalAddress
 import games.studiohummingbird.skhema.types.PostalAddress
+import games.studiohummingbird.skhema.types.serializable.serializablePostalAddress
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 

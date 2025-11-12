@@ -16,10 +16,10 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
+import games.studiohummingbird.skhema.types.StructuredValue
 import games.studiohummingbird.skhema.types.serializable.serializableObservation
 import games.studiohummingbird.skhema.types.serializable.serializableQuantitativeValue
 import games.studiohummingbird.skhema.types.serializable.serializableStructuredValue
-import games.studiohummingbird.skhema.types.StructuredValue
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 

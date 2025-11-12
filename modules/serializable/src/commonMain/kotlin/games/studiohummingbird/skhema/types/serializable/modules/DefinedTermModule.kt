@@ -16,8 +16,8 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.serializable.serializableDefinedTerm
 import games.studiohummingbird.skhema.types.DefinedTerm
+import games.studiohummingbird.skhema.types.serializable.serializableDefinedTerm
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 

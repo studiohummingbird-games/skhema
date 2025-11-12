@@ -16,8 +16,8 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.serializable.serializableCampingPitch
 import games.studiohummingbird.skhema.types.CampingPitch
+import games.studiohummingbird.skhema.types.serializable.serializableCampingPitch
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 

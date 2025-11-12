@@ -16,8 +16,8 @@
  */
 package games.studiohummingbird.skhema.properties.serializable.modules
 
-import games.studiohummingbird.skhema.properties.FloorLevel
 import games.studiohummingbird.skhema.datatypes.serializable.serializableText
+import games.studiohummingbird.skhema.properties.FloorLevel
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 

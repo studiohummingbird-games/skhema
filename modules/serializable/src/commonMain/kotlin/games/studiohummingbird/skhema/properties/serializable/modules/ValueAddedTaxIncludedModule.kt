@@ -16,8 +16,8 @@
  */
 package games.studiohummingbird.skhema.properties.serializable.modules
 
-import games.studiohummingbird.skhema.properties.ValueAddedTaxIncluded
 import games.studiohummingbird.skhema.datatypes.serializable.serializableBoolean
+import games.studiohummingbird.skhema.properties.ValueAddedTaxIncluded
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 

@@ -16,8 +16,8 @@
  */
 package games.studiohummingbird.skhema.properties.serializable.modules
 
-import games.studiohummingbird.skhema.properties.HealthPlanCostSharing
 import games.studiohummingbird.skhema.datatypes.serializable.serializableBoolean
+import games.studiohummingbird.skhema.properties.HealthPlanCostSharing
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 

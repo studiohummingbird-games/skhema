@@ -16,8 +16,8 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.serializable.serializableMusicGroup
 import games.studiohummingbird.skhema.types.MusicGroup
+import games.studiohummingbird.skhema.types.serializable.serializableMusicGroup
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 

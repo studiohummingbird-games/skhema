@@ -16,8 +16,8 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.serializable.serializableObservation
 import games.studiohummingbird.skhema.types.Observation
+import games.studiohummingbird.skhema.types.serializable.serializableObservation
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 

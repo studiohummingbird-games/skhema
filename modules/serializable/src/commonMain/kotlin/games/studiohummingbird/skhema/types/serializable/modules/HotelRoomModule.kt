@@ -16,8 +16,8 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.serializable.serializableHotelRoom
 import games.studiohummingbird.skhema.types.HotelRoom
+import games.studiohummingbird.skhema.types.serializable.serializableHotelRoom
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
