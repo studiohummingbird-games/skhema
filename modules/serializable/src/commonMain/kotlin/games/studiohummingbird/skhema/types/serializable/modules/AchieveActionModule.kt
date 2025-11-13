@@ -1,4 +1,4 @@
-/* ActionModule.kt
+/* AchieveActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,17 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.Action
+import games.studiohummingbird.skhema.types.AchieveAction
 import games.studiohummingbird.skhema.types.serializable.serializableAchieveAction
-import games.studiohummingbird.skhema.types.serializable.serializableAction
 import games.studiohummingbird.skhema.types.serializable.serializableLoseAction
 import games.studiohummingbird.skhema.types.serializable.serializableTieAction
 import games.studiohummingbird.skhema.types.serializable.serializableWinAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val ActionModule = SerializersModule {
-    polymorphic(Action::class) {
+val AchieveActionModule = SerializersModule {
+    polymorphic(AchieveAction::class) {
         serializableAchieveAction()
-        serializableAction()
         serializableLoseAction()
         serializableTieAction()
         serializableWinAction()

@@ -20,6 +20,7 @@ import kotlinx.serialization.modules.SerializersModule
 
 val SkhemaTypesModule = SerializersModule {
     include(AccommodationModule)
+    include(AchieveActionModule)
     include(ActionModule)
     include(AdministrativeAreaModule)
     include(ApartmentModule)
@@ -31,6 +32,7 @@ val SkhemaTypesModule = SerializersModule {
     include(HotelRoomModule)
     include(HouseModule)
     include(IntangibleModule)
+    include(LoseActionModule)
     include(MeetingRoomModule)
     include(MusicGroupModule)
     include(ObservationModule)
@@ -46,4 +48,6 @@ val SkhemaTypesModule = SerializersModule {
     include(StructuredValueModule)
     include(SuiteModule)
     include(ThingModule)
+    include(TieActionModule)
+    include(WinActionModule)
 }

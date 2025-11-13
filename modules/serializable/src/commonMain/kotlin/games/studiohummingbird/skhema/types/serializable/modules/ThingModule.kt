@@ -24,6 +24,7 @@ import kotlinx.serialization.modules.polymorphic
 val ThingModule = SerializersModule {
     polymorphic(Thing::class) {
         serializableAccommodation()
+        serializableAchieveAction()
         serializableAction()
         serializableAdministrativeArea()
         serializableApartment()
@@ -35,6 +36,7 @@ val ThingModule = SerializersModule {
         serializableHotelRoom()
         serializableHouse()
         serializableIntangible()
+        serializableLoseAction()
         serializableMeetingRoom()
         serializableMusicGroup()
         serializableObservation()
@@ -50,6 +52,8 @@ val ThingModule = SerializersModule {
         serializableStructuredValue()
         serializableSuite()
         serializableThing()
+        serializableTieAction()
         serializableVehicle()
+        serializableWinAction()
     }
 }
