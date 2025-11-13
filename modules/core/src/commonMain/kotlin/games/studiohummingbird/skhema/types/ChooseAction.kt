@@ -1,4 +1,4 @@
-/* ActionModule.kt
+/* ChooseAction.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,22 +14,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.types.serializable.modules
+package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.types.Action
-import games.studiohummingbird.skhema.types.serializable.*
-import kotlinx.serialization.modules.SerializersModule
-import kotlinx.serialization.modules.polymorphic
+import games.studiohummingbird.skhema.properties.ActionOption
 
-val ActionModule = SerializersModule {
-    polymorphic(Action::class) {
-        serializableAchieveAction()
-        serializableAction()
-        serializableAssessAction()
-        serializableChooseAction()
-        serializableLoseAction()
-        serializableTieAction()
-        serializableVoteAction()
-        serializableWinAction()
-    }
+interface ChooseAction
+: AssessAction
+{
+    val actionOption: ActionOption?
 }

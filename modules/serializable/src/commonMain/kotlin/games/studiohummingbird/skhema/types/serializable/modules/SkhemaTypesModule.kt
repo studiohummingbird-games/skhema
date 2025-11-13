@@ -24,8 +24,10 @@ val SkhemaTypesModule = SerializersModule {
     include(ActionModule)
     include(AdministrativeAreaModule)
     include(ApartmentModule)
+    include(AssessActionModule)
     include(AudienceModule)
     include(CampingPitchModule)
+    include(ChooseActionModule)
     include(CityModule)
     include(CountryModule)
     include(DefinedTermModule)
@@ -49,5 +51,6 @@ val SkhemaTypesModule = SerializersModule {
     include(SuiteModule)
     include(ThingModule)
     include(TieActionModule)
+    include(VoteActionModule)
     include(WinActionModule)
 }
