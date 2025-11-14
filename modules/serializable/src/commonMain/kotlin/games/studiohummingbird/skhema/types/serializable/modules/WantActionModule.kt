@@ -1,4 +1,4 @@
-/* ReactActionModule.kt
+/* WantActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.ReactAction
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.WantAction
+import games.studiohummingbird.skhema.types.serializable.serializableWantAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val ReactActionModule = SerializersModule {
-    polymorphic(ReactAction::class) {
-        serializableAgreeAction()
-        serializableDisagreeAction()
-        serializableDislikeAction()
-        serializableEndorseAction()
-        serializableLikeAction()
-        serializableReactAction()
+val WantActionModule = SerializersModule {
+    polymorphic(WantAction::class) {
         serializableWantAction()
     }
 }

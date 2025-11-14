@@ -33,5 +33,6 @@ val AssessActionModule = SerializersModule {
         serializableLikeAction()
         serializableReactAction()
         serializableVoteAction()
+        serializableWantAction()
     }
 }
