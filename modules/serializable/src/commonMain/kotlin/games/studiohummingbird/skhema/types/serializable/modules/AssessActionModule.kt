@@ -18,11 +18,15 @@ package games.studiohummingbird.skhema.types.serializable.modules
 
 import games.studiohummingbird.skhema.types.AssessAction
 import games.studiohummingbird.skhema.types.serializable.serializableAssessAction
+import games.studiohummingbird.skhema.types.serializable.serializableChooseAction
+import games.studiohummingbird.skhema.types.serializable.serializableVoteAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
 val AssessActionModule = SerializersModule {
     polymorphic(AssessAction::class) {
         serializableAssessAction()
+        serializableChooseAction()
+        serializableVoteAction()
     }
 }
