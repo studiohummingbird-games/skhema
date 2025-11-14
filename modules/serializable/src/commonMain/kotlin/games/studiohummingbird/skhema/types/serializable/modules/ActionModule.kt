@@ -28,6 +28,7 @@ val ActionModule = SerializersModule {
         serializableAgreeAction()
         serializableAssessAction()
         serializableChooseAction()
+        serializableDisagreeAction()
         serializableIgnoreAction()
         serializableLoseAction()
         serializableReactAction()
