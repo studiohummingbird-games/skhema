@@ -16,13 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.ReactAction
 import kotlinx.serialization.modules.SerializersModule
 
 val SkhemaTypesModule = SerializersModule {
     include(AccommodationModule)
     include(AchieveActionModule)
     include(ActionModule)
+    include(AgreeActionModule)
     include(AdministrativeAreaModule)
     include(ApartmentModule)
     include(AssessActionModule)

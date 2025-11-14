@@ -26,6 +26,7 @@ val ThingModule = SerializersModule {
         serializableAccommodation()
         serializableAchieveAction()
         serializableAction()
+        serializableAgreeAction()
         serializableAdministrativeArea()
         serializableApartment()
         serializableAssessAction()
