@@ -37,6 +37,7 @@ val ThingModule = SerializersModule {
         serializableDefinedTerm()
         serializableHotelRoom()
         serializableHouse()
+        serializableIgnoreAction()
         serializableIntangible()
         serializableLoseAction()
         serializableMeetingRoom()
