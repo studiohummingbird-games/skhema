@@ -29,6 +29,7 @@ val ActionModule = SerializersModule {
         serializableChooseAction()
         serializableIgnoreAction()
         serializableLoseAction()
+        serializableReactAction()
         serializableTieAction()
         serializableVoteAction()
         serializableWinAction()

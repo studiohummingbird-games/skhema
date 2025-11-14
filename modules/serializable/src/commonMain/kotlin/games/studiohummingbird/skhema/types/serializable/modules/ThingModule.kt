@@ -48,6 +48,7 @@ val ThingModule = SerializersModule {
         serializablePlace()
         serializablePostalAddress()
         serializableQuantitativeValue()
+        serializableReactAction()
         serializableRoom()
         serializableSchoolDistrict()
         serializableSingleFamilyResidence()
