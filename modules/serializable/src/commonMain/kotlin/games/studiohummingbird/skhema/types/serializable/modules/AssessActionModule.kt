@@ -30,6 +30,7 @@ val AssessActionModule = SerializersModule {
         serializableDislikeAction()
         serializableEndorseAction()
         serializableIgnoreAction()
+        serializableLikeAction()
         serializableReactAction()
         serializableVoteAction()
     }

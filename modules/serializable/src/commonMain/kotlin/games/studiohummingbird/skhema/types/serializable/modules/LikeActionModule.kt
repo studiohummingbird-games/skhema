@@ -1,4 +1,4 @@
-/* ActionModule.kt
+/* LikeActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,27 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.Action
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.LikeAction
+import games.studiohummingbird.skhema.types.serializable.serializableLikeAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val ActionModule = SerializersModule {
-    polymorphic(Action::class) {
-        serializableAchieveAction()
-        serializableAction()
-        serializableAgreeAction()
-        serializableAssessAction()
-        serializableChooseAction()
-        serializableDisagreeAction()
-        serializableDislikeAction()
-        serializableEndorseAction()
-        serializableIgnoreAction()
+val LikeActionModule = SerializersModule {
+    polymorphic(LikeAction::class) {
         serializableLikeAction()
-        serializableLoseAction()
-        serializableReactAction()
-        serializableTieAction()
-        serializableVoteAction()
-        serializableWinAction()
     }
 }
