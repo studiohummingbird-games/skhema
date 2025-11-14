@@ -1,4 +1,4 @@
-/* AssessActionModule.kt
+/* DislikeActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,20 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.AssessAction
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.DislikeAction
+import games.studiohummingbird.skhema.types.serializable.serializableDislikeAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val AssessActionModule = SerializersModule {
-    polymorphic(AssessAction::class) {
-        serializableAgreeAction()
-        serializableAssessAction()
-        serializableChooseAction()
-        serializableDisagreeAction()
+val DislikeActionModule = SerializersModule {
+    polymorphic(DislikeAction::class) {
         serializableDislikeAction()
-        serializableIgnoreAction()
-        serializableReactAction()
-        serializableVoteAction()
     }
 }

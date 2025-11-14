@@ -19,6 +19,7 @@ package games.studiohummingbird.skhema.types.serializable.modules
 import games.studiohummingbird.skhema.types.ReactAction
 import games.studiohummingbird.skhema.types.serializable.serializableAgreeAction
 import games.studiohummingbird.skhema.types.serializable.serializableDisagreeAction
+import games.studiohummingbird.skhema.types.serializable.serializableDislikeAction
 import games.studiohummingbird.skhema.types.serializable.serializableReactAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
@@ -27,6 +28,7 @@ val ReactActionModule = SerializersModule {
     polymorphic(ReactAction::class) {
         serializableAgreeAction()
         serializableDisagreeAction()
+        serializableDislikeAction()
         serializableReactAction()
     }
 }

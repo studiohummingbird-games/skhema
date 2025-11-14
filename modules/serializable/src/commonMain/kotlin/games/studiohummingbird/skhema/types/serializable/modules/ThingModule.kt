@@ -37,6 +37,7 @@ val ThingModule = SerializersModule {
         serializableCountry()
         serializableDefinedTerm()
         serializableDisagreeAction()
+        serializableDislikeAction()
         serializableHotelRoom()
         serializableHouse()
         serializableIgnoreAction()
