@@ -1,4 +1,4 @@
-/* ActionModule.kt
+/* ConsumeActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,30 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.Action
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.ConsumeAction
+import games.studiohummingbird.skhema.types.serializable.serializableConsumeAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val ActionModule = SerializersModule {
-    polymorphic(Action::class) {
-        serializableAchieveAction()
-        serializableAction()
-        serializableAgreeAction()
-        serializableAssessAction()
-        serializableChooseAction()
+val ConsumeActionModule = SerializersModule {
+    polymorphic(ConsumeAction::class) {
         serializableConsumeAction()
-        serializableDisagreeAction()
-        serializableDislikeAction()
-        serializableEndorseAction()
-        serializableIgnoreAction()
-        serializableLikeAction()
-        serializableLoseAction()
-        serializableReactAction()
-        serializableReviewAction()
-        serializableTieAction()
-        serializableVoteAction()
-        serializableWantAction()
-        serializableWinAction()
     }
 }

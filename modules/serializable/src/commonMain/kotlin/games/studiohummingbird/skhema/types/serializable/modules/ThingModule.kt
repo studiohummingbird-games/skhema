@@ -34,6 +34,7 @@ val ThingModule = SerializersModule {
         serializableCampingPitch()
         serializableChooseAction()
         serializableCity()
+        serializableConsumeAction()
         serializableCountry()
         serializableDefinedTerm()
         serializableDisagreeAction()
