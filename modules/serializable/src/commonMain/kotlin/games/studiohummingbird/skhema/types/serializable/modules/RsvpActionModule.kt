@@ -1,4 +1,4 @@
-/* CommunicateActionModule.kt
+/* RsvpActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,23 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.CommunicateAction
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.RsvpAction
+import games.studiohummingbird.skhema.types.serializable.serializableRsvpAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val CommunicateActionModule = SerializersModule {
-    polymorphic(CommunicateAction::class) {
-        serializableAskAction()
-        serializableCheckInAction()
-        serializableCheckOutAction()
-        serializableCommentAction()
-        serializableCommunicateAction()
-        serializableConfirmAction()
-        serializableInformAction()
-        serializableInviteAction()
-        serializableReplyAction()
+val RsvpActionModule = SerializersModule {
+    polymorphic(RsvpAction::class) {
         serializableRsvpAction()
-        serializableShareAction()
     }
 }

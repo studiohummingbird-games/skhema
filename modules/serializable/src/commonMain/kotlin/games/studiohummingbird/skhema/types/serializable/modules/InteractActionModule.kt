@@ -39,6 +39,7 @@ val InteractActionModule = SerializersModule {
         serializableMarryAction()
         serializableRegisterAction()
         serializableReplyAction()
+        serializableRsvpAction()
         serializableShareAction()
         serializableSubscribeAction()
         serializableUnRegisterAction()
