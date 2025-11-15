@@ -1,4 +1,4 @@
-/* PlayActionModule.kt
+/* PerformAction.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,19 +14,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.types.serializable.modules
+package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.types.PlayAction
-import games.studiohummingbird.skhema.types.serializable.serializableExerciseAction
-import games.studiohummingbird.skhema.types.serializable.serializablePerformAction
-import games.studiohummingbird.skhema.types.serializable.serializablePlayAction
-import kotlinx.serialization.modules.SerializersModule
-import kotlinx.serialization.modules.polymorphic
+import games.studiohummingbird.skhema.properties.EntertainmentBusiness
 
-val PlayActionModule = SerializersModule {
-    polymorphic(PlayAction::class) {
-        serializableExerciseAction()
-        serializablePerformAction()
-        serializablePlayAction()
-    }
+interface PerformAction
+: PlayAction
+{
+    val entertainmentBusiness: EntertainmentBusiness?
 }

@@ -1,4 +1,4 @@
-/* PlayActionModule.kt
+/* PerformActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,17 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.PlayAction
-import games.studiohummingbird.skhema.types.serializable.serializableExerciseAction
+import games.studiohummingbird.skhema.types.PerformAction
 import games.studiohummingbird.skhema.types.serializable.serializablePerformAction
-import games.studiohummingbird.skhema.types.serializable.serializablePlayAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val PlayActionModule = SerializersModule {
-    polymorphic(PlayAction::class) {
-        serializableExerciseAction()
+val PerformActionModule = SerializersModule {
+    polymorphic(PerformAction::class) {
         serializablePerformAction()
-        serializablePlayAction()
     }
 }
