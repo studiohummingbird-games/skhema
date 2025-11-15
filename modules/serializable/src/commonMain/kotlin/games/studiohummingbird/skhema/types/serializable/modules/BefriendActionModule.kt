@@ -1,4 +1,4 @@
-/* InteractActionModule.kt
+/* BefriendActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,15 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.InteractAction
+import games.studiohummingbird.skhema.types.BefriendAction
 import games.studiohummingbird.skhema.types.serializable.serializableBefriendAction
-import games.studiohummingbird.skhema.types.serializable.serializableInteractAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val InteractActionModule = SerializersModule {
-    polymorphic(InteractAction::class) {
+val BefriendActionModule = SerializersModule {
+    polymorphic(BefriendAction::class) {
         serializableBefriendAction()
-        serializableInteractAction()
     }
 }
