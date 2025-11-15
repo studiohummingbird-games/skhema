@@ -63,6 +63,7 @@ val ThingModule = SerializersModule {
         serializablePaintAction()
         serializablePatient()
         serializablePerson()
+        serializablePhotographAction()
         serializablePlace()
         serializablePlayGameAction()
         serializablePostalAddress()
