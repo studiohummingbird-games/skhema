@@ -72,6 +72,7 @@ val ThingModule = SerializersModule {
         serializableTieAction()
         serializableUseAction()
         serializableVehicle()
+        serializableViewAction()
         serializableVoteAction()
         serializableWantAction()
         serializableWearAction()
