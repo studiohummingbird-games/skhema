@@ -33,6 +33,7 @@ val ThingModule = SerializersModule {
         serializableAssessAction()
         serializableAudience()
         serializableCampingPitch()
+        serializableCheckAction()
         serializableChooseAction()
         serializableCity()
         serializableConsumeAction()
