@@ -38,6 +38,7 @@ val ThingModule = SerializersModule {
         serializableConsumeAction()
         serializableControlAction()
         serializableCountry()
+        serializableCreateAction()
         serializableDeactivateAction()
         serializableDefinedTerm()
         serializableDisagreeAction()
