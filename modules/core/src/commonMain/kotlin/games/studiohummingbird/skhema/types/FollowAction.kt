@@ -16,4 +16,10 @@
  */
 package games.studiohummingbird.skhema.types
 
+import games.studiohummingbird.skhema.properties.Followee
+
 interface FollowAction
+: InteractAction
+{
+    val followee: Followee
+}

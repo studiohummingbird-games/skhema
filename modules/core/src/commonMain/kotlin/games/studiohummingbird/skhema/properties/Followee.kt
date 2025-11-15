@@ -16,4 +16,4 @@
  */
 package games.studiohummingbird.skhema.properties
 
-interface Folowee
+interface Followee

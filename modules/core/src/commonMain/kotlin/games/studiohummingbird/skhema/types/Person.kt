@@ -63,7 +63,7 @@ interface Person
     , Employees
     , Endorsee
     , Endorsers
-    , Folowee
+    , Followee
     , Follows
     , Founder
     , Founders
