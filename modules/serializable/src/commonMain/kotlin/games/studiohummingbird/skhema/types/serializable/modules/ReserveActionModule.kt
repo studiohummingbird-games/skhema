@@ -1,4 +1,4 @@
-/* OrganizeActionModule.kt
+/* ReserveActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,23 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.OrganizeAction
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.ReserveAction
+import games.studiohummingbird.skhema.types.serializable.serializableReserveAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val OrganizeActionModule = SerializersModule {
-    polymorphic(OrganizeAction::class) {
-        serializableAcceptAction()
-        serializableAllocateAction()
-        serializableApplyAction()
-        serializableAssignAction()
-        serializableAuthorizeAction()
-        serializableBookmarkAction()
-        serializableCancelAction()
-        serializableOrganizeAction()
-        serializablePlanAction()
-        serializableRejectAction()
+val ReserveActionModule = SerializersModule {
+    polymorphic(ReserveAction::class) {
         serializableReserveAction()
     }
 }
