@@ -1,4 +1,4 @@
-/* OrganizeActionModule.kt
+/* AllocateActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,15 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.OrganizeAction
+import games.studiohummingbird.skhema.types.AllocateAction
 import games.studiohummingbird.skhema.types.serializable.serializableAllocateAction
-import games.studiohummingbird.skhema.types.serializable.serializableOrganizeAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val OrganizeActionModule = SerializersModule {
-    polymorphic(OrganizeAction::class) {
+val AllocateActionModule = SerializersModule {
+    polymorphic(AllocateAction::class) {
         serializableAllocateAction()
-        serializableOrganizeAction()
     }
 }
