@@ -58,6 +58,7 @@ val ActionModule = SerializersModule {
         serializableReviewAction()
         serializableSuspendAction()
         serializableTieAction()
+        serializableTrackAction()
         serializableUseAction()
         serializableViewAction()
         serializableVoteAction()

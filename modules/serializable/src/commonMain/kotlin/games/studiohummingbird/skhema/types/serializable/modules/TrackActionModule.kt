@@ -1,4 +1,4 @@
-/* FindActionModule.kt
+/* TrackActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.FindAction
-import games.studiohummingbird.skhema.types.serializable.serializableCheckAction
-import games.studiohummingbird.skhema.types.serializable.serializableDiscoverAction
-import games.studiohummingbird.skhema.types.serializable.serializableFindAction
+import games.studiohummingbird.skhema.types.TrackAction
 import games.studiohummingbird.skhema.types.serializable.serializableTrackAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val FindActionModule = SerializersModule {
-    polymorphic(FindAction::class) {
-        serializableCheckAction()
-        serializableDiscoverAction()
-        serializableFindAction()
+val TrackActionModule = SerializersModule {
+    polymorphic(TrackAction::class) {
         serializableTrackAction()
     }
 }

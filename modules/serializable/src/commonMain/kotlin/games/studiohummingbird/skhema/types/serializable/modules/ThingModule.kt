@@ -84,6 +84,7 @@ val ThingModule = SerializersModule {
         serializableSuspendAction()
         serializableThing()
         serializableTieAction()
+        serializableTrackAction()
         serializableUseAction()
         serializableVehicle()
         serializableViewAction()
