@@ -1,4 +1,4 @@
-/* CreateActionModule.kt
+/* CookAction.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,17 +14,16 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.types.serializable.modules
+package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.types.CreateAction
-import games.studiohummingbird.skhema.types.serializable.serializableCookAction
-import games.studiohummingbird.skhema.types.serializable.serializableCreateAction
-import kotlinx.serialization.modules.SerializersModule
-import kotlinx.serialization.modules.polymorphic
+import games.studiohummingbird.skhema.properties.FoodEstablishment
+import games.studiohummingbird.skhema.properties.FoodEvent
+import games.studiohummingbird.skhema.properties.Recipe
 
-val CreateActionModule = SerializersModule {
-    polymorphic(CreateAction::class) {
-        serializableCreateAction()
-        serializableCookAction()
-    }
+interface CookAction
+: CreateAction
+{
+    val foodEstablishment: FoodEstablishment?
+    val foodEvent: FoodEvent?
+    val recipe: Recipe?
 }
