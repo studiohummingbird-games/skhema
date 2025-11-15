@@ -89,5 +89,6 @@ val ThingModule = SerializersModule {
         serializableWatchAction()
         serializableWearAction()
         serializableWinAction()
+        serializableWriteAction()
     }
 }

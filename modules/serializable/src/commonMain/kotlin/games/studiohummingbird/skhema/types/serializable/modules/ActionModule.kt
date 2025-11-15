@@ -62,5 +62,6 @@ val ActionModule = SerializersModule {
         serializableWatchAction()
         serializableWearAction()
         serializableWinAction()
+        serializableWriteAction()
     }
 }
