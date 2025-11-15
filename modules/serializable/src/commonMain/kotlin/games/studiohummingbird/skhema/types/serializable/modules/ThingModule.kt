@@ -72,6 +72,7 @@ val ThingModule = SerializersModule {
         serializableState()
         serializableStructuredValue()
         serializableSuite()
+        serializableSuspendAction()
         serializableThing()
         serializableTieAction()
         serializableUseAction()
