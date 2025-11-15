@@ -1,4 +1,4 @@
-/* InteractActionModule.kt
+/* ShareActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,30 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.InteractAction
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.ShareAction
+import games.studiohummingbird.skhema.types.serializable.serializableShareAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val InteractActionModule = SerializersModule {
-    polymorphic(InteractAction::class) {
-        serializableAskAction()
-        serializableBefriendAction()
-        serializableCommunicateAction()
-        serializableCheckInAction()
-        serializableCheckOutAction()
-        serializableCommentAction()
-        serializableFollowAction()
-        serializableInformAction()
-        serializableInteractAction()
-        serializableInviteAction()
-        serializableJoinAction()
-        serializableLeaveAction()
-        serializableMarryAction()
-        serializableRegisterAction()
-        serializableReplyAction()
+val ShareActionModule = SerializersModule {
+    polymorphic(ShareAction::class) {
         serializableShareAction()
-        serializableSubscribeAction()
-        serializableUnRegisterAction()
     }
 }

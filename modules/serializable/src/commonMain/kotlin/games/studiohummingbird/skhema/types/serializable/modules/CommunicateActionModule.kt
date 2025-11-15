@@ -31,5 +31,6 @@ val CommunicateActionModule = SerializersModule {
         serializableInformAction()
         serializableInviteAction()
         serializableReplyAction()
+        serializableShareAction()
     }
 }

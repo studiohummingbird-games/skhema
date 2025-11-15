@@ -92,6 +92,7 @@ val ThingModule = SerializersModule {
         serializableReviewAction()
         serializableRoom()
         serializableSchoolDistrict()
+        serializableShareAction()
         serializableSingleFamilyResidence()
         serializableState()
         serializableStructuredValue()
