@@ -1,4 +1,4 @@
-/* ControlActionModule.kt
+/* ResumeActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.ControlAction
-import games.studiohummingbird.skhema.types.serializable.serializableActivateAction
-import games.studiohummingbird.skhema.types.serializable.serializableControlAction
-import games.studiohummingbird.skhema.types.serializable.serializableDeactivateAction
+import games.studiohummingbird.skhema.types.ResumeAction
 import games.studiohummingbird.skhema.types.serializable.serializableResumeAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val ControlActionModule = SerializersModule {
-    polymorphic(ControlAction::class) {
-        serializableActivateAction()
-        serializableControlAction()
-        serializableDeactivateAction()
+val ResumeActionModule = SerializersModule {
+    polymorphic(ResumeAction::class) {
         serializableResumeAction()
     }
 }
