@@ -25,10 +25,11 @@ val InteractActionModule = SerializersModule {
     polymorphic(InteractAction::class) {
         serializableAskAction()
         serializableBefriendAction()
-        serializableCommunicateAction()
         serializableCheckInAction()
         serializableCheckOutAction()
         serializableCommentAction()
+        serializableCommunicateAction()
+        serializableConfirmAction()
         serializableFollowAction()
         serializableInformAction()
         serializableInteractAction()

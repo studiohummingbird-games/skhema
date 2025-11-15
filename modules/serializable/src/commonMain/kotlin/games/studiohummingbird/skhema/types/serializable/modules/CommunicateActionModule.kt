@@ -28,6 +28,7 @@ val CommunicateActionModule = SerializersModule {
         serializableCheckOutAction()
         serializableCommentAction()
         serializableCommunicateAction()
+        serializableConfirmAction()
         serializableInformAction()
         serializableInviteAction()
         serializableReplyAction()
