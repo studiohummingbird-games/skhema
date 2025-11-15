@@ -1,4 +1,4 @@
-/* ConsumeActionModule.kt
+/* DrinkActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,15 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.ConsumeAction
-import games.studiohummingbird.skhema.types.serializable.serializableConsumeAction
+import games.studiohummingbird.skhema.types.DrinkAction
 import games.studiohummingbird.skhema.types.serializable.serializableDrinkAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val ConsumeActionModule = SerializersModule {
-    polymorphic(ConsumeAction::class) {
-        serializableConsumeAction()
+val DrinkActionModule = SerializersModule {
+    polymorphic(DrinkAction::class) {
         serializableDrinkAction()
     }
 }

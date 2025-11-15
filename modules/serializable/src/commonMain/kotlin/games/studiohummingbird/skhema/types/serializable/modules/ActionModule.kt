@@ -31,6 +31,7 @@ val ActionModule = SerializersModule {
         serializableConsumeAction()
         serializableDisagreeAction()
         serializableDislikeAction()
+        serializableDrinkAction()
         serializableEndorseAction()
         serializableIgnoreAction()
         serializableLikeAction()
