@@ -88,6 +88,7 @@ val ThingModule = SerializersModule {
         serializableSingleFamilyResidence()
         serializableState()
         serializableStructuredValue()
+        serializableSubscribeAction()
         serializableSuite()
         serializableSuspendAction()
         serializableThing()
