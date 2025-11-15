@@ -1,4 +1,4 @@
-/* FollowAction.kt
+/* FollowActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,12 +14,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.types
+package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.properties.Followee
+import games.studiohummingbird.skhema.types.FollowAction
+import games.studiohummingbird.skhema.types.serializable.serializableFollowAction
+import kotlinx.serialization.modules.SerializersModule
+import kotlinx.serialization.modules.polymorphic
 
-interface FollowAction
-: InteractAction
-{
-    val followee: Followee?
+val FollowActionModule = SerializersModule {
+    polymorphic(FollowAction::class) {
+        serializableFollowAction()
+    }
 }

@@ -46,6 +46,7 @@ val ActionModule = SerializersModule {
         serializableEndorseAction()
         serializableFilmAction()
         serializableFindAction()
+        serializableFollowAction()
         serializableIgnoreAction()
         serializableInstallAction()
         serializableInteractAction()
