@@ -1,4 +1,4 @@
-/* InteractActionModule.kt
+/* MarryActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.InteractAction
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.MarryAction
+import games.studiohummingbird.skhema.types.serializable.serializableMarryAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val InteractActionModule = SerializersModule {
-    polymorphic(InteractAction::class) {
-        serializableBefriendAction()
-        serializableCommunicateAction()
-        serializableFollowAction()
-        serializableInteractAction()
-        serializableJoinAction()
-        serializableLeaveAction()
+val MarryActionModule = SerializersModule {
+    polymorphic(MarryAction::class) {
         serializableMarryAction()
     }
 }
