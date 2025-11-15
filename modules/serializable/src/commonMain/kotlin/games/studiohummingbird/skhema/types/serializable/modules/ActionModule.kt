@@ -31,6 +31,7 @@ val ActionModule = SerializersModule {
         serializableAssessAction()
         serializableBefriendAction()
         serializableCheckAction()
+        serializableCheckInAction()
         serializableChooseAction()
         serializableCommunicateAction()
         serializableConsumeAction()

@@ -18,6 +18,7 @@ package games.studiohummingbird.skhema.types.serializable.modules
 
 import games.studiohummingbird.skhema.types.CommunicateAction
 import games.studiohummingbird.skhema.types.serializable.serializableAskAction
+import games.studiohummingbird.skhema.types.serializable.serializableCheckInAction
 import games.studiohummingbird.skhema.types.serializable.serializableCommunicateAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
@@ -25,6 +26,7 @@ import kotlinx.serialization.modules.polymorphic
 val CommunicateActionModule = SerializersModule {
     polymorphic(CommunicateAction::class) {
         serializableAskAction()
+        serializableCheckInAction()
         serializableCommunicateAction()
     }
 }
