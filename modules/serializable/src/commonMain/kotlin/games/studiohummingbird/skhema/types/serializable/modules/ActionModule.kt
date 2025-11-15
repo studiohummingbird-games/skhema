@@ -61,6 +61,7 @@ val ActionModule = SerializersModule {
         serializablePlayGameAction()
         serializableReactAction()
         serializableReadAction()
+        serializableRegisterAction()
         serializableResumeAction()
         serializableReviewAction()
         serializableSuspendAction()

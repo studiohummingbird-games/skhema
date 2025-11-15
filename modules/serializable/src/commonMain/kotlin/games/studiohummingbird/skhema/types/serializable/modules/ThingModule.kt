@@ -80,6 +80,7 @@ val ThingModule = SerializersModule {
         serializableQuantitativeValue()
         serializableReactAction()
         serializableReadAction()
+        serializableRegisterAction()
         serializableResumeAction()
         serializableReviewAction()
         serializableRoom()
