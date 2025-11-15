@@ -23,6 +23,7 @@ import kotlinx.serialization.modules.polymorphic
 
 val ActionModule = SerializersModule {
     polymorphic(Action::class) {
+        serializableAcceptAction()
         serializableAchieveAction()
         serializableAction()
         serializableActivateAction()

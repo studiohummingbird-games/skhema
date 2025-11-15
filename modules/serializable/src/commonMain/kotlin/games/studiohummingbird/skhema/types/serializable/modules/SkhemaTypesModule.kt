@@ -19,6 +19,7 @@ package games.studiohummingbird.skhema.types.serializable.modules
 import kotlinx.serialization.modules.SerializersModule
 
 val SkhemaTypesModule = SerializersModule {
+    include(AcceptActionModule)
     include(AccommodationModule)
     include(AchieveActionModule)
     include(ActionModule)
