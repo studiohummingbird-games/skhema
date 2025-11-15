@@ -19,6 +19,7 @@ package games.studiohummingbird.skhema.types.serializable.modules
 import games.studiohummingbird.skhema.types.AllocateAction
 import games.studiohummingbird.skhema.types.serializable.serializableAcceptAction
 import games.studiohummingbird.skhema.types.serializable.serializableAllocateAction
+import games.studiohummingbird.skhema.types.serializable.serializableAssignAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
@@ -26,5 +27,6 @@ val AllocateActionModule = SerializersModule {
     polymorphic(AllocateAction::class) {
         serializableAcceptAction()
         serializableAllocateAction()
+        serializableAssignAction()
     }
 }
