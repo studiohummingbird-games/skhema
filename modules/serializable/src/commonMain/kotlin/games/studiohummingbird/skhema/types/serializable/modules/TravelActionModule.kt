@@ -1,4 +1,4 @@
-/* MoveActionModule.kt
+/* TravelActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.MoveAction
-import games.studiohummingbird.skhema.types.serializable.serializableArriveAction
-import games.studiohummingbird.skhema.types.serializable.serializableDepartAction
-import games.studiohummingbird.skhema.types.serializable.serializableMoveAction
+import games.studiohummingbird.skhema.types.TravelAction
 import games.studiohummingbird.skhema.types.serializable.serializableTravelAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val MoveActionModule = SerializersModule {
-    polymorphic(MoveAction::class) {
-        serializableArriveAction()
-        serializableDepartAction()
-        serializableMoveAction()
+val TravelActionModule = SerializersModule {
+    polymorphic(TravelAction::class) {
         serializableTravelAction()
     }
 }
