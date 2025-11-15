@@ -20,6 +20,7 @@ import games.studiohummingbird.skhema.types.PlanAction
 import games.studiohummingbird.skhema.types.serializable.serializableCancelAction
 import games.studiohummingbird.skhema.types.serializable.serializablePlanAction
 import games.studiohummingbird.skhema.types.serializable.serializableReserveAction
+import games.studiohummingbird.skhema.types.serializable.serializableScheduleAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
@@ -28,5 +29,6 @@ val PlanActionModule = SerializersModule {
         serializableCancelAction()
         serializablePlanAction()
         serializableReserveAction()
+        serializableScheduleAction()
     }
 }
