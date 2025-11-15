@@ -57,6 +57,7 @@ val SkhemaTypesModule = SerializersModule {
     include(InstallActionModule)
     include(IntangibleModule)
     include(InteractActionModule)
+    include(JoinActionModule)
     include(LikeActionModule)
     include(ListenActionModule)
     include(LoseActionModule)

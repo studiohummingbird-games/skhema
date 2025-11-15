@@ -61,6 +61,7 @@ val ThingModule = SerializersModule {
         serializableInstallAction()
         serializableIntangible()
         serializableInteractAction()
+        serializableJoinAction()
         serializableLikeAction()
         serializableListenAction()
         serializableLoseAction()
