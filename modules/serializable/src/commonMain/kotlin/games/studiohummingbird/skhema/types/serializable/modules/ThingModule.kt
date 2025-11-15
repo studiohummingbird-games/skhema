@@ -56,6 +56,7 @@ val ThingModule = SerializersModule {
         serializablePatient()
         serializablePerson()
         serializablePlace()
+        serializablePlayGameAction()
         serializablePostalAddress()
         serializableQuantitativeValue()
         serializableReactAction()

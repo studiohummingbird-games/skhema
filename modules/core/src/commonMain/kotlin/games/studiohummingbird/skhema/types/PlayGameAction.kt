@@ -1,4 +1,4 @@
-/* ConsumeActionModule.kt
+/* PlayGameAction.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,20 +14,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.types.serializable.modules
+package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.types.ConsumeAction
-import games.studiohummingbird.skhema.types.serializable.*
-import kotlinx.serialization.modules.SerializersModule
-import kotlinx.serialization.modules.polymorphic
+import games.studiohummingbird.skhema.properties.GameAvailabilityType
 
-val ConsumeActionModule = SerializersModule {
-    polymorphic(ConsumeAction::class) {
-        serializableConsumeAction()
-        serializableDrinkAction()
-        serializableEatAction()
-        serializableInstallAction()
-        serializableListenAction()
-        serializablePlayGameAction()
-    }
+interface PlayGameAction
+: ConsumeAction
+{
+    val gameAvailabilityType: GameAvailabilityType?
 }
