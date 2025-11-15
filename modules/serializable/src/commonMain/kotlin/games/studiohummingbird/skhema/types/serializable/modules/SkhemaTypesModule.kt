@@ -28,6 +28,7 @@ val SkhemaTypesModule = SerializersModule {
     include(AdministrativeAreaModule)
     include(AllocateActionModule)
     include(ApartmentModule)
+    include(ApplyActionModule)
     include(ArriveActionModule)
     include(AskActionModule)
     include(AssessActionModule)
