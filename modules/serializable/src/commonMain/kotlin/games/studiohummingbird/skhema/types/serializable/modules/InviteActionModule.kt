@@ -1,4 +1,4 @@
-/* CommunicateActionModule.kt
+/* InviteActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.CommunicateAction
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.InviteAction
+import games.studiohummingbird.skhema.types.serializable.serializableInviteAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val CommunicateActionModule = SerializersModule {
-    polymorphic(CommunicateAction::class) {
-        serializableAskAction()
-        serializableCheckInAction()
-        serializableCheckOutAction()
-        serializableCommentAction()
-        serializableCommunicateAction()
-        serializableInformAction()
+val InviteActionModule = SerializersModule {
+    polymorphic(InviteAction::class) {
         serializableInviteAction()
     }
 }
