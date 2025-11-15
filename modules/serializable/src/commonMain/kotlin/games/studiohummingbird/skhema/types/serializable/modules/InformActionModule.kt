@@ -1,4 +1,4 @@
-/* InteractActionModule.kt
+/* InformActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,27 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.InteractAction
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.InformAction
+import games.studiohummingbird.skhema.types.serializable.serializableInformAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val InteractActionModule = SerializersModule {
-    polymorphic(InteractAction::class) {
-        serializableAskAction()
-        serializableBefriendAction()
-        serializableCommunicateAction()
-        serializableCheckInAction()
-        serializableCheckOutAction()
-        serializableCommentAction()
-        serializableFollowAction()
+val InformActionModule = SerializersModule {
+    polymorphic(InformAction::class) {
         serializableInformAction()
-        serializableInteractAction()
-        serializableJoinAction()
-        serializableLeaveAction()
-        serializableMarryAction()
-        serializableRegisterAction()
-        serializableSubscribeAction()
-        serializableUnRegisterAction()
     }
 }

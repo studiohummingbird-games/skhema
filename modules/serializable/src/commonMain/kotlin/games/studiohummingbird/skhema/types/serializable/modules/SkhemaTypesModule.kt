@@ -58,6 +58,7 @@ val SkhemaTypesModule = SerializersModule {
     include(HotelRoomModule)
     include(HouseModule)
     include(IgnoreActionModule)
+    include(InformActionModule)
     include(InstallActionModule)
     include(IntangibleModule)
     include(InteractActionModule)
