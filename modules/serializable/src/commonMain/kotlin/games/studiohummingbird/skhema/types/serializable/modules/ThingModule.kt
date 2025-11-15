@@ -94,6 +94,7 @@ val ThingModule = SerializersModule {
         serializablePhotographAction()
         serializablePlace()
         serializablePlanAction()
+        serializablePlayAction()
         serializablePlayGameAction()
         serializablePostalAddress()
         serializableQuantitativeValue()
