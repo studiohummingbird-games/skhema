@@ -109,6 +109,7 @@ val SkhemaTypesModule = SerializersModule {
     include(ScheduleActionModule)
     include(SchoolDistrictModule)
     include(SearchActionModule)
+    include(SeekToActionModule)
     include(ShareActionModule)
     include(SingleFamilyResidenceModule)
     include(StateModule)
