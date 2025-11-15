@@ -23,6 +23,7 @@ import kotlinx.serialization.modules.polymorphic
 
 val InteractActionModule = SerializersModule {
     polymorphic(InteractAction::class) {
+        serializableAskAction()
         serializableBefriendAction()
         serializableCommunicateAction()
         serializableFollowAction()

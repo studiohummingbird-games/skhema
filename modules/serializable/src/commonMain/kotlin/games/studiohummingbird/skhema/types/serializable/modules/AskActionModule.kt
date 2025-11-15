@@ -1,4 +1,4 @@
-/* CommunicateActionModule.kt
+/* AskActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,15 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.CommunicateAction
+import games.studiohummingbird.skhema.types.AskAction
 import games.studiohummingbird.skhema.types.serializable.serializableAskAction
-import games.studiohummingbird.skhema.types.serializable.serializableCommunicateAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val CommunicateActionModule = SerializersModule {
-    polymorphic(CommunicateAction::class) {
+val AskActionModule = SerializersModule {
+    polymorphic(AskAction::class) {
         serializableAskAction()
-        serializableCommunicateAction()
     }
 }
