@@ -51,6 +51,7 @@ val ThingModule = SerializersModule {
         serializableCreateAction()
         serializableDeactivateAction()
         serializableDefinedTerm()
+        serializableDepartAction()
         serializableDisagreeAction()
         serializableDiscoverAction()
         serializableDislikeAction()

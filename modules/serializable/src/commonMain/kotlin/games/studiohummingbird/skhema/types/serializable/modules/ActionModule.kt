@@ -43,6 +43,7 @@ val ActionModule = SerializersModule {
         serializableCookAction()
         serializableCreateAction()
         serializableDeactivateAction()
+        serializableDepartAction()
         serializableDisagreeAction()
         serializableDiscoverAction()
         serializableDislikeAction()

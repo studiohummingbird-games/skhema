@@ -47,6 +47,7 @@ val SkhemaTypesModule = SerializersModule {
     include(CreateActionModule)
     include(DeactivateActionModule)
     include(DefinedTermModule)
+    include(DepartActionModule)
     include(DisagreeActionModule)
     include(DiscoverActionModule)
     include(DislikeActionModule)
