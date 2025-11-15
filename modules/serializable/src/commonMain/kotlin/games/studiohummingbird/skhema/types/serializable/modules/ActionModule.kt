@@ -25,6 +25,7 @@ val ActionModule = SerializersModule {
     polymorphic(Action::class) {
         serializableAchieveAction()
         serializableAction()
+        serializableActivateAction()
         serializableAgreeAction()
         serializableAssessAction()
         serializableChooseAction()

@@ -25,6 +25,7 @@ val ThingModule = SerializersModule {
     polymorphic(Thing::class) {
         serializableAccommodation()
         serializableAchieveAction()
+        serializableActivateAction()
         serializableAction()
         serializableAgreeAction()
         serializableAdministrativeArea()
