@@ -1,4 +1,4 @@
-/* CreateActionModule.kt
+/* FilmActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.CreateAction
-import games.studiohummingbird.skhema.types.serializable.serializableCookAction
-import games.studiohummingbird.skhema.types.serializable.serializableCreateAction
-import games.studiohummingbird.skhema.types.serializable.serializableDrawAction
+import games.studiohummingbird.skhema.types.FilmAction
 import games.studiohummingbird.skhema.types.serializable.serializableFilmAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val CreateActionModule = SerializersModule {
-    polymorphic(CreateAction::class) {
-        serializableCreateAction()
-        serializableCookAction()
-        serializableDrawAction()
+val FilmActionModule = SerializersModule {
+    polymorphic(FilmAction::class) {
         serializableFilmAction()
     }
 }
