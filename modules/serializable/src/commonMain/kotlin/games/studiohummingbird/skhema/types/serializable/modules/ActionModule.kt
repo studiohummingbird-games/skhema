@@ -47,6 +47,7 @@ val ActionModule = SerializersModule {
         serializableUseAction()
         serializableVoteAction()
         serializableWantAction()
+        serializableWearAction()
         serializableWinAction()
     }
 }
