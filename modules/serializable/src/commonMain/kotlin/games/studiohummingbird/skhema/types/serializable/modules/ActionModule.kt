@@ -75,6 +75,7 @@ val ActionModule = SerializersModule {
         serializableOrganizeAction()
         serializablePaintAction()
         serializablePhotographAction()
+        serializablePlanAction()
         serializablePlayGameAction()
         serializableReactAction()
         serializableReadAction()
