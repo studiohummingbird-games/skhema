@@ -20,6 +20,7 @@ import games.studiohummingbird.skhema.types.ConsumeAction
 import games.studiohummingbird.skhema.types.serializable.serializableConsumeAction
 import games.studiohummingbird.skhema.types.serializable.serializableDrinkAction
 import games.studiohummingbird.skhema.types.serializable.serializableEatAction
+import games.studiohummingbird.skhema.types.serializable.serializableInstallAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
@@ -28,5 +29,6 @@ val ConsumeActionModule = SerializersModule {
         serializableConsumeAction()
         serializableDrinkAction()
         serializableEatAction()
+        serializableInstallAction()
     }
 }
