@@ -33,6 +33,7 @@ val SkhemaTypesModule = SerializersModule {
     include(CampingPitchModule)
     include(CheckActionModule)
     include(CheckInActionModule)
+    include(CheckOutActionModule)
     include(ChooseActionModule)
     include(CityModule)
     include(CommunicateActionModule)

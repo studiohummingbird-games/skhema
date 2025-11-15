@@ -27,6 +27,7 @@ val InteractActionModule = SerializersModule {
         serializableBefriendAction()
         serializableCommunicateAction()
         serializableCheckInAction()
+        serializableCheckOutAction()
         serializableFollowAction()
         serializableInteractAction()
         serializableJoinAction()
