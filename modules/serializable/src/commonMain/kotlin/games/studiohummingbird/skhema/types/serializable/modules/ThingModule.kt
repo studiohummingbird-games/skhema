@@ -120,6 +120,7 @@ val ThingModule = SerializersModule {
         serializableReplyAction()
         serializableReserveAction()
         serializableResumeAction()
+        serializableReturnAction()
         serializableReviewAction()
         serializableRoom()
         serializableRsvpAction()

@@ -101,6 +101,7 @@ val ActionModule = SerializersModule {
         serializableReplyAction()
         serializableReserveAction()
         serializableResumeAction()
+        serializableReturnAction()
         serializableReviewAction()
         serializableRsvpAction()
         serializableScheduleAction()
