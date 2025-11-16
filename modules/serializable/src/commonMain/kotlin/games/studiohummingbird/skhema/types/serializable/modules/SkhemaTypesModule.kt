@@ -89,6 +89,7 @@ val SkhemaTypesModule = SerializersModule {
     include(OrganizeActionModule)
     include(PaintActionModule)
     include(PatientModule)
+    include(PayActionModule)
     include(PerformActionModule)
     include(PersonModule)
     include(PhotographActionModule)
