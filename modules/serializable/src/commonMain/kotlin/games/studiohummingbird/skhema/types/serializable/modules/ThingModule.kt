@@ -62,6 +62,7 @@ val ThingModule = SerializersModule {
         serializableCookAction()
         serializableCountry()
         serializableCreateAction()
+        serializableCreativeWork()
         serializableDeactivateAction()
         serializableDefinedTerm()
         serializableDeleteAction()

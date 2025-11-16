@@ -58,6 +58,7 @@ val SkhemaTypesModule = SerializersModule {
     include(CookActionModule)
     include(CountryModule)
     include(CreateActionModule)
+    include(CreativeWorkModule)
     include(DeactivateActionModule)
     include(DefinedTermModule)
     include(DeleteActionModule)

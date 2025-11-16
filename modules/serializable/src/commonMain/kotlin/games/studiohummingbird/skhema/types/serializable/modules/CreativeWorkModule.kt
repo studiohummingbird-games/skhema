@@ -1,4 +1,4 @@
-/* EducationalOccupationalCredential.kt
+/* CreativeWorkModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,16 +14,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.types
+package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.properties.*
+import games.studiohummingbird.skhema.types.CreativeWork
+import games.studiohummingbird.skhema.types.serializable.serializableCreativeWork
+import kotlinx.serialization.modules.SerializersModule
+import kotlinx.serialization.modules.polymorphic
 
-interface EducationalOccupationalCredential
-: CreativeWork
-{
-    val competencyRequired: CompetencyRequired?
-    val credentialCategory: CredentialCategory?
-    val recognizedBy: RecognizedBy?
-    val validFor: ValidFor?
-    val validIn: ValidIn?
+val CreativeWorkModule = SerializersModule {
+    polymorphic(CreativeWork::class) {
+        serializableCreativeWork()
+    }
 }
