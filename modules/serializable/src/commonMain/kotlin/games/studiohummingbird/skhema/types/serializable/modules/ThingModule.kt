@@ -113,6 +113,7 @@ val ThingModule = SerializersModule {
         serializableQuoteAction()
         serializableReactAction()
         serializableReadAction()
+        serializableReceiveAction()
         serializableRegisterAction()
         serializableRejectAction()
         serializableRentAction()

@@ -94,6 +94,7 @@ val ActionModule = SerializersModule {
         serializableQuoteAction()
         serializableReactAction()
         serializableReadAction()
+        serializableReceiveAction()
         serializableRegisterAction()
         serializableRejectAction()
         serializableRentAction()

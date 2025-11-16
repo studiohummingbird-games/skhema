@@ -109,6 +109,7 @@ val SkhemaTypesModule = SerializersModule {
     include(QuoteActionModule)
     include(ReactActionModule)
     include(ReadActionModule)
+    include(ReceiveActionModule)
     include(RegisterActionModule)
     include(RejectActionModule)
     include(RentActionModule)
