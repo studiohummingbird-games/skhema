@@ -105,6 +105,7 @@ val ActionModule = SerializersModule {
         serializableSubscribeAction()
         serializableSuspendAction()
         serializableTieAction()
+        serializableTipAction()
         serializableTrackAction()
         serializableTradeAction()
         serializableTravelAction()

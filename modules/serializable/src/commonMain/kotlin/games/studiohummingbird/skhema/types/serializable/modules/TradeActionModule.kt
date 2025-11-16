@@ -24,6 +24,7 @@ import games.studiohummingbird.skhema.types.serializable.serializablePreOrderAct
 import games.studiohummingbird.skhema.types.serializable.serializableQuoteAction
 import games.studiohummingbird.skhema.types.serializable.serializableRentAction
 import games.studiohummingbird.skhema.types.serializable.serializableSellAction
+import games.studiohummingbird.skhema.types.serializable.serializableTipAction
 import games.studiohummingbird.skhema.types.serializable.serializableTradeAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
@@ -37,6 +38,7 @@ val TradeActionModule = SerializersModule {
         serializableQuoteAction()
         serializableRentAction()
         serializableSellAction()
+        serializableTipAction()
         serializableTradeAction()
     }
 }
