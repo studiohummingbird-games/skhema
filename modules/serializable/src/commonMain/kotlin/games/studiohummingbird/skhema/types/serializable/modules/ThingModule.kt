@@ -116,6 +116,7 @@ val ThingModule = SerializersModule {
         serializableSeekToAction()
         serializableShareAction()
         serializableSingleFamilyResidence()
+        serializableSolveMathAction()
         serializableState()
         serializableStructuredValue()
         serializableSubscribeAction()
