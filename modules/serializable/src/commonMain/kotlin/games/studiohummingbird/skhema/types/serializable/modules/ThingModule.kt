@@ -89,6 +89,7 @@ val ThingModule = SerializersModule {
         serializableMoveAction()
         serializableMusicGroup()
         serializableObservation()
+        serializableOrderAction()
         serializableOrganizeAction()
         serializablePaintAction()
         serializablePatient()
