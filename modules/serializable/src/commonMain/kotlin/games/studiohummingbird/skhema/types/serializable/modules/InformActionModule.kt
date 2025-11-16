@@ -17,7 +17,6 @@
 package games.studiohummingbird.skhema.types.serializable.modules
 
 import games.studiohummingbird.skhema.types.InformAction
-import games.studiohummingbird.skhema.types.serializable.serializableCommunicateAction
 import games.studiohummingbird.skhema.types.serializable.serializableConfirmAction
 import games.studiohummingbird.skhema.types.serializable.serializableInformAction
 import games.studiohummingbird.skhema.types.serializable.serializableRsvpAction
