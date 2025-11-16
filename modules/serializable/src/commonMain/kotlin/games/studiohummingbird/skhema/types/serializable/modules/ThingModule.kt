@@ -145,6 +145,7 @@ val ThingModule = SerializersModule {
         serializableSuite()
         serializableSuspendAction()
         serializableTakeAction()
+        serializableTaxon()
         serializableThing()
         serializableTieAction()
         serializableTipAction()
