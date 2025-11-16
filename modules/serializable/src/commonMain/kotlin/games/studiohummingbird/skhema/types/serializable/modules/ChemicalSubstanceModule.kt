@@ -1,4 +1,4 @@
-/* BioChemEntityModule.kt
+/* ChemicalSubstanceModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,15 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.BioChemEntity
-import games.studiohummingbird.skhema.types.serializable.serializableBioChemEntity
+import games.studiohummingbird.skhema.types.ChemicalSubstance
 import games.studiohummingbird.skhema.types.serializable.serializableChemicalSubstance
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val BioChemEntityModule = SerializersModule {
-    polymorphic(BioChemEntity::class) {
-        serializableBioChemEntity()
+val ChemicalSubstanceModule = SerializersModule {
+    polymorphic(ChemicalSubstance::class) {
         serializableChemicalSubstance()
     }
 }

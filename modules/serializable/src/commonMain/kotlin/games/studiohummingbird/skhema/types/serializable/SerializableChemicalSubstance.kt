@@ -1,0 +1,60 @@
+/* SerializableChemicalSubstance.kt
+ * Copyright (C) 2025  Zymus
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+package games.studiohummingbird.skhema.types.serializable
+
+import games.studiohummingbird.skhema.properties.*
+import games.studiohummingbird.skhema.types.ChemicalSubstance
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.modules.PolymorphicModuleBuilder
+import kotlinx.serialization.modules.subclass
+
+@Serializable
+data class SerializableChemicalSubstance(
+    override val chemicalComposition: ChemicalComposition? = null,
+    override val chemicalRole: ChemicalRole? = null,
+    override val potentialUse: PotentialUse? = null,
+    override val associatedDisease: AssociatedDisease? = null,
+    override val bioChemInteraction: BioChemInteraction? = null,
+    override val bioChemSimilarity: BioChemSimilarity? = null,
+    override val biologicalRole: BiologicalRole? = null,
+    override val funding: Funding? = null,
+    override val hasBioChemEntityPart: HasBioChemEntityPart? = null,
+    override val hasMolecularFunction: HasMolecularFunction? = null,
+    override val hasRepresentation: HasRepresentation? = null,
+    override val isEncodedByBioChemEntity: IsEncodedByBioChemEntity? = null,
+    override val isInvolvedInBiologicalProcess: IsInvolvedInBiologicalProcess? = null,
+    override val isLocatedInSubcellularLocation: IsLocatedInSubcellularLocation? = null,
+    override val isPartOfBioChemEntity: IsPartOfBioChemEntity? = null,
+    override val taxonomicRange: TaxonomicRange? = null,
+    override val additionalType: AdditionalType? = null,
+    override val alternateName: AlternateName? = null,
+    override val description: Description? = null,
+    override val disambiguationDescription: DisambiguationDescription? = null,
+    override val identifier: Identifier? = null,
+    override val image: Image? = null,
+    override val mainEntityOfPage: MainEntityOfPage? = null,
+    override val name: Name? = null,
+    override val potentialAction: PotentialAction? = null,
+    override val sameAs: SameAs? = null,
+    override val subjectOf: SubjectOf? = null,
+    override val url: URL? = null
+)
+: ChemicalSubstance
+
+fun PolymorphicModuleBuilder<ChemicalSubstance>.serializableChemicalSubstance() {
+    subclass(SerializableChemicalSubstance::class)
+}
