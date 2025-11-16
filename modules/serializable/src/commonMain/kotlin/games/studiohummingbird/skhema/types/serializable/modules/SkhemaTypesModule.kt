@@ -100,6 +100,7 @@ val SkhemaTypesModule = SerializersModule {
     include(PostalAddressModule)
     include(PreOrderActionModule)
     include(QuantitativeValueModule)
+    include(QuoteActionModule)
     include(ReactActionModule)
     include(ReadActionModule)
     include(RegisterActionModule)
