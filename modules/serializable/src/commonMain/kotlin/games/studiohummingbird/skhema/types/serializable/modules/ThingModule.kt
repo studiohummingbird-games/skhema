@@ -74,6 +74,7 @@ val ThingModule = SerializersModule {
         serializableFilmAction()
         serializableFindAction()
         serializableFollowAction()
+        serializableGiveAction()
         serializableHotelRoom()
         serializableHouse()
         serializableIgnoreAction()
