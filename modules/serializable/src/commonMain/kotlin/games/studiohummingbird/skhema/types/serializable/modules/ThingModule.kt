@@ -80,6 +80,7 @@ val ThingModule = SerializersModule {
         serializableHouse()
         serializableIgnoreAction()
         serializableInformAction()
+        serializableInsertAction()
         serializableInstallAction()
         serializableIntangible()
         serializableInteractAction()

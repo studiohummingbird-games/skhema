@@ -70,6 +70,7 @@ val ActionModule = SerializersModule {
         serializableGiveAction()
         serializableIgnoreAction()
         serializableInformAction()
+        serializableInsertAction()
         serializableInstallAction()
         serializableInteractAction()
         serializableInviteAction()
