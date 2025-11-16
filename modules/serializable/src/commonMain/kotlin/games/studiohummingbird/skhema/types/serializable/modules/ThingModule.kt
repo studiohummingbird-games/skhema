@@ -147,6 +147,7 @@ val ThingModule = SerializersModule {
         serializableTransferAction()
         serializableTravelAction()
         serializableUnRegisterAction()
+        serializableUpdateAction()
         serializableUseAction()
         serializableVehicle()
         serializableViewAction()

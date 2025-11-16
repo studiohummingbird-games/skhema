@@ -143,6 +143,7 @@ val SkhemaTypesModule = SerializersModule {
     include(TransferActionModule)
     include(TravelActionModule)
     include(UnRegisterActionModule)
+    include(UpdateActionModule)
     include(UseActionModule)
     include(ViewActionModule)
     include(VoteActionModule)

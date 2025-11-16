@@ -121,6 +121,7 @@ val ActionModule = SerializersModule {
         serializableTransferAction()
         serializableTravelAction()
         serializableUnRegisterAction()
+        serializableUpdateAction()
         serializableUseAction()
         serializableViewAction()
         serializableVoteAction()
