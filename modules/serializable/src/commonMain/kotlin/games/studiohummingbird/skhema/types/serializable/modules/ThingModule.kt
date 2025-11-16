@@ -120,6 +120,7 @@ val ThingModule = SerializersModule {
         serializableSchoolDistrict()
         serializableSearchAction()
         serializableSeekToAction()
+        serializableSellAction()
         serializableShareAction()
         serializableSingleFamilyResidence()
         serializableSolveMathAction()
