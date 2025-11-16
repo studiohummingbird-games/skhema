@@ -41,6 +41,7 @@ val ThingModule = SerializersModule {
         serializableAuthorizeAction()
         serializableBefriendAction()
         serializableBookmarkAction()
+        serializableBorrowAction()
         serializableBuyAction()
         serializableCampingPitch()
         serializableCancelAction()
