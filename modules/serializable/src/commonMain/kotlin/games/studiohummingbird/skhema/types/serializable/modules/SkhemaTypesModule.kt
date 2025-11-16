@@ -61,6 +61,7 @@ val SkhemaTypesModule = SerializersModule {
     include(DiscoverActionModule)
     include(DislikeActionModule)
     include(DonateActionModule)
+    include(DownloadActionModule)
     include(DrawActionModule)
     include(DrinkActionModule)
     include(EatActionModule)
