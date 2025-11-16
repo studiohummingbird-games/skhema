@@ -138,6 +138,7 @@ val ThingModule = SerializersModule {
         serializableSubscribeAction()
         serializableSuite()
         serializableSuspendAction()
+        serializableTakeAction()
         serializableThing()
         serializableTieAction()
         serializableTipAction()

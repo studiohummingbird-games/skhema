@@ -113,6 +113,7 @@ val ActionModule = SerializersModule {
         serializableSolveMathAction()
         serializableSubscribeAction()
         serializableSuspendAction()
+        serializableTakeAction()
         serializableTieAction()
         serializableTipAction()
         serializableTrackAction()
