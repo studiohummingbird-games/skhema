@@ -1,4 +1,4 @@
-/* TransferActionModule.kt
+/* LendActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,23 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.TransferAction
-import games.studiohummingbird.skhema.types.serializable.serializableBorrowAction
-import games.studiohummingbird.skhema.types.serializable.serializableDonateAction
-import games.studiohummingbird.skhema.types.serializable.serializableDownloadAction
-import games.studiohummingbird.skhema.types.serializable.serializableGiveAction
+import games.studiohummingbird.skhema.types.LendAction
 import games.studiohummingbird.skhema.types.serializable.serializableLendAction
-import games.studiohummingbird.skhema.types.serializable.serializableTransferAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val TransferActionModule = SerializersModule {
-    polymorphic(TransferAction::class) {
-        serializableBorrowAction()
-        serializableDonateAction()
-        serializableDownloadAction()
-        serializableGiveAction()
+val LendActionModule = SerializersModule {
+    polymorphic(LendAction::class) {
         serializableLendAction()
-        serializableTransferAction()
     }
 }

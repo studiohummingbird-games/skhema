@@ -74,6 +74,7 @@ val ActionModule = SerializersModule {
         serializableInviteAction()
         serializableJoinAction()
         serializableLeaveAction()
+        serializableLendAction()
         serializableLikeAction()
         serializableListenAction()
         serializableLoseAction()
