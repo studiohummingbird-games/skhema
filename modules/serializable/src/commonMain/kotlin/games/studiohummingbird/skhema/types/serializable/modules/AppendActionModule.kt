@@ -1,4 +1,4 @@
-/* UpdateActionModule.kt
+/* AppendActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.UpdateAction
-import games.studiohummingbird.skhema.types.serializable.serializableAddAction
+import games.studiohummingbird.skhema.types.AppendAction
 import games.studiohummingbird.skhema.types.serializable.serializableAppendAction
-import games.studiohummingbird.skhema.types.serializable.serializableInsertAction
-import games.studiohummingbird.skhema.types.serializable.serializableUpdateAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val UpdateActionModule = SerializersModule {
-    polymorphic(UpdateAction::class) {
-        serializableAddAction()
+val AppendActionModule = SerializersModule {
+    polymorphic(AppendAction::class) {
         serializableAppendAction()
-        serializableInsertAction()
-        serializableUpdateAction()
     }
 }

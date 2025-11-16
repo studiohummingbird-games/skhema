@@ -30,6 +30,7 @@ val ActionModule = SerializersModule {
         serializableAddAction()
         serializableAgreeAction()
         serializableAllocateAction()
+        serializableAppendAction()
         serializableApplyAction()
         serializableArriveAction()
         serializableAskAction()
