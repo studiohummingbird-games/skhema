@@ -1,4 +1,4 @@
-/* TradeActionModule.kt
+/* BuyActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,15 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.TradeAction
+import games.studiohummingbird.skhema.types.BuyAction
 import games.studiohummingbird.skhema.types.serializable.serializableBuyAction
-import games.studiohummingbird.skhema.types.serializable.serializableTradeAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val TradeActionModule = SerializersModule {
-    polymorphic(TradeAction::class) {
+val BuyActionModule = SerializersModule {
+    polymorphic(BuyAction::class) {
         serializableBuyAction()
-        serializableTradeAction()
     }
 }
