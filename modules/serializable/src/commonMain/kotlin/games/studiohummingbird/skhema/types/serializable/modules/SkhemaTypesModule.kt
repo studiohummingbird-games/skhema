@@ -121,6 +121,7 @@ val SkhemaTypesModule = SerializersModule {
     include(ThingModule)
     include(TieActionModule)
     include(TrackActionModule)
+    include(TradeActionModule)
     include(TravelActionModule)
     include(UnRegisterActionModule)
     include(UseActionModule)
