@@ -19,6 +19,7 @@ package games.studiohummingbird.skhema.types.serializable.modules
 import games.studiohummingbird.skhema.types.InsertAction
 import games.studiohummingbird.skhema.types.serializable.serializableAppendAction
 import games.studiohummingbird.skhema.types.serializable.serializableInsertAction
+import games.studiohummingbird.skhema.types.serializable.serializablePrependAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
@@ -26,5 +27,6 @@ val InsertActionModule = SerializersModule {
     polymorphic(InsertAction::class) {
         serializableAppendAction()
         serializableInsertAction()
+        serializablePrependAction()
     }
 }

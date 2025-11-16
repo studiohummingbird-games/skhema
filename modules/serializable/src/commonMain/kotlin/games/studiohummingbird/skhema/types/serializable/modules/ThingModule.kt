@@ -112,6 +112,7 @@ val ThingModule = SerializersModule {
         serializablePlayGameAction()
         serializablePostalAddress()
         serializablePreOrderAction()
+        serializablePrependAction()
         serializableQuantitativeValue()
         serializableQuoteAction()
         serializableReactAction()

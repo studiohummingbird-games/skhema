@@ -1,4 +1,4 @@
-/* AddActionModule.kt
+/* PrependActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.AddAction
-import games.studiohummingbird.skhema.types.serializable.serializableAddAction
-import games.studiohummingbird.skhema.types.serializable.serializableAppendAction
-import games.studiohummingbird.skhema.types.serializable.serializableInsertAction
+import games.studiohummingbird.skhema.types.PrependAction
 import games.studiohummingbird.skhema.types.serializable.serializablePrependAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val AddActionModule = SerializersModule {
-    polymorphic(AddAction::class) {
-        serializableAddAction()
-        serializableAppendAction()
-        serializableInsertAction()
+val PrependActionModule = SerializersModule {
+    polymorphic(PrependAction::class) {
         serializablePrependAction()
     }
 }
