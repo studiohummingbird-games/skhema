@@ -1,4 +1,4 @@
-/* UpdateActionModule.kt
+/* ReplaceActionModule.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,19 +16,13 @@
  */
 package games.studiohummingbird.skhema.types.serializable.modules
 
-import games.studiohummingbird.skhema.types.UpdateAction
-import games.studiohummingbird.skhema.types.serializable.*
+import games.studiohummingbird.skhema.types.ReplaceAction
+import games.studiohummingbird.skhema.types.serializable.serializableReplaceAction
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 
-val UpdateActionModule = SerializersModule {
-    polymorphic(UpdateAction::class) {
-        serializableAddAction()
-        serializableAppendAction()
-        serializableDeleteAction()
-        serializableInsertAction()
-        serializablePrependAction()
+val ReplaceActionModule = SerializersModule {
+    polymorphic(ReplaceAction::class) {
         serializableReplaceAction()
-        serializableUpdateAction()
     }
 }
