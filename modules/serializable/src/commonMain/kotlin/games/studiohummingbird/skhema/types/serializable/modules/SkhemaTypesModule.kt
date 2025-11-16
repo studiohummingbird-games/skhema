@@ -75,6 +75,7 @@ val SkhemaTypesModule = SerializersModule {
     include(FilmActionModule)
     include(FindActionModule)
     include(FollowActionModule)
+    include(GeneModule)
     include(GiveActionModule)
     include(HotelRoomModule)
     include(HouseModule)
