@@ -109,6 +109,7 @@ val ThingModule = SerializersModule {
         serializableReadAction()
         serializableRegisterAction()
         serializableRejectAction()
+        serializableRentAction()
         serializableReplyAction()
         serializableReserveAction()
         serializableResumeAction()
