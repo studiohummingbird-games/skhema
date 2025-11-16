@@ -79,6 +79,7 @@ val ActionModule = SerializersModule {
         serializableListenAction()
         serializableLoseAction()
         serializableMarryAction()
+        serializableMoneyTransfer()
         serializableMoveAction()
         serializableOrderAction()
         serializableOrganizeAction()

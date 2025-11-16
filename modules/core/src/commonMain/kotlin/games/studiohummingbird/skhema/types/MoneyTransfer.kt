@@ -1,4 +1,4 @@
-/* TransferActionModule.kt
+/* MoneyTransfer.kt
  * Copyright (C) 2025  Zymus
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,21 +14,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package games.studiohummingbird.skhema.types.serializable.modules
+package games.studiohummingbird.skhema.types
 
-import games.studiohummingbird.skhema.types.TransferAction
-import games.studiohummingbird.skhema.types.serializable.*
-import kotlinx.serialization.modules.SerializersModule
-import kotlinx.serialization.modules.polymorphic
+import games.studiohummingbird.skhema.properties.Amount
+import games.studiohummingbird.skhema.properties.BeneficiaryBank
 
-val TransferActionModule = SerializersModule {
-    polymorphic(TransferAction::class) {
-        serializableBorrowAction()
-        serializableDonateAction()
-        serializableDownloadAction()
-        serializableGiveAction()
-        serializableLendAction()
-        serializableMoneyTransfer()
-        serializableTransferAction()
-    }
+interface MoneyTransfer
+: TransferAction
+{
+    val amount: Amount?
+    val beneficiaryBank: BeneficiaryBank?
 }

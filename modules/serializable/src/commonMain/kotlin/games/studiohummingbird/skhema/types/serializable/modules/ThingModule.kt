@@ -91,6 +91,7 @@ val ThingModule = SerializersModule {
         serializableLoseAction()
         serializableMarryAction()
         serializableMeetingRoom()
+        serializableMoneyTransfer()
         serializableMoveAction()
         serializableMusicGroup()
         serializableObservation()
